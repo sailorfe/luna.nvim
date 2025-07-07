@@ -9,8 +9,8 @@ local moonlight		= hsl(280, 30, 36)
 local millennium	= hsl(280, 30, 42)
 local silver			= hsl(280, 18, 48)
 local diana				= hsl(280, 24, 60)
-local crystal			= hsl(280, 60, 84)
-local artemis			= hsl(280, 60, 90)
+local crystal			= hsl(280, 36, 84)
+local artemis			= hsl(280, 48, 90)
 local nehellenia	= hsl(280, 24, 24)
 local mugen				= hsl(280, 24, 36)
 local deadmoon		= hsl(280, 24, 48)
@@ -105,14 +105,14 @@ local theme = lush(function(injected_functions)
 		Comment        { fg = silver, gui = "italic" },
 
 		Constant       { fg = venus },
-		String         { fg = hotaru },
-		Character      { fg = makoto },
+		String         { fg = jupiter },
+		Character      { fg = mercury },
 		Number         { Character },
 		Boolean        { Character },
 		Float          { Character },
 
-		Identifier     { fg = saturn },
-		Function       { fg = ami },
+		Identifier     { fg = mercury },
+		Function       { fg = usagi },
 
 		Statement      { fg = rei, gui = "bold" },
 		Conditional    { Statement },
@@ -122,7 +122,7 @@ local theme = lush(function(injected_functions)
 		Keyword        { Statement },
 		Exception      { Statement },
 
-		PreProc        { fg = hotaru },
+		PreProc        { fg = saturn },
 		Include        { PreProc },
 		Define         { PreProc },
 		Macro          { PreProc },
@@ -133,10 +133,10 @@ local theme = lush(function(injected_functions)
 		Structure      { Type },
 		Typedef        { Type },
 
-		Special        { fg = usagi },
+		Special        { fg = hotaru },
 		SpecialChar    { fg = makoto },
 		Tag            { Special },
-		Delimiter      { fg = moon },
+		Delimiter      { fg = saturn },
 		SpecialComment { Special },
 		Debug          { Special },
 
