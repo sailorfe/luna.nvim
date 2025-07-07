@@ -7,10 +7,10 @@
 # Default colors
 [colors.primary]
 background = '#432b50'
-foreground = '#debeef'
+foreground = '#dbc8e5'
 
 #[colors.cursor]
-#cursor = '#debeef'
+#cursor = '#dbc8e5'
 #text = '#432b50'
 
 # Normal colors
@@ -33,4 +33,4 @@ yellow = '#f4d07c'
 blue = '#b9d0f4'
 magenta = '#c0a7f1'
 cyan = '#eb84c2'
-white = '#debeef'
+white = '#dbc8e5'
