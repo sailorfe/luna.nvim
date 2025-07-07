@@ -1,0 +1,36 @@
+# -----------------------------------------------------------------------------
+# Luna Alacritty Colors
+# Theme: Luna
+# Upstream: https://codeberg.org/sailorfe/luna.nvim/src/branch/main/extras/alacritty/luna.toml
+# -----------------------------------------------------------------------------
+
+# Default colors
+[colors.primary]
+background = '#432b50'
+foreground = '#debeef'
+
+#[colors.cursor]
+#cursor = '#debeef'
+#text = '#432b50'
+
+# Normal colors
+[colors.normal]
+black = '#543663'
+red = '#e25057'
+green = '#b6ca68'
+yellow = '#efbb43'
+blue = '#8dafe2'
+magenta = '#a98de2'
+cyan = '#d65c85'
+white = '#a181b1'
+
+# Bright colors
+[colors.bright]
+black = '#764b8b'
+red = '#eb8489'
+green = '#ccda95'
+yellow = '#f4d07c'
+blue = '#b9d0f4'
+magenta = '#c0a7f1'
+cyan = '#eb84c2'
+white = '#debeef'

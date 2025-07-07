@@ -1,0 +1,45 @@
+[colors]
+foreground = "#debeef"
+background = "#432b50"
+cursor_bg = "#debeef"
+cursor_border = "#debeef"
+cursor_fg = "#432b50"
+selection_bg = "#c0a7f1"
+selection_fg = "#432b50"
+split = "#a98de2"
+compose_cursor = "#efbb43"
+scrollbar_thumb = "#764b8b"
+
+ansi = ["#543663", "#e25057", "#b6ca68", "#efbb43", "#8dafe2", "#a98de2", "#d65c85", "#a181b1"]
+brights = ["#764b8b", "#eb8489", "#ccda95", "#f4d07c", "#b9d0f4", "#c0a7f1", "#eb84c2", "#debeef"]
+
+[colors.tab_bar]
+inactive_tab_edge = "#32203c"
+background = "#432b50"
+
+[colors.tab_bar.active_tab]
+fg_color = "#32203c"
+bg_color = "#a98de2"
+
+[colors.tab_bar.inactive_tab]
+fg_color = "#845d98"
+bg_color = "#422f4c"
+
+[colors.tab_bar.inactive_tab_hover]
+fg_color = "#a98de2"
+bg_color = "#422f4c"
+# intensity = "Bold"
+
+[colors.tab_bar.new_tab_hover]
+fg_color = "#a98de2"
+bg_color = "#432b50"
+intensity = "Bold"
+
+[colors.tab_bar.new_tab]
+fg_color = "#a98de2"
+bg_color = "#432b50"
+
+[metadata]
+aliases = ['luna']
+author = "sailorfe"
+name = "Luna"
