@@ -1,0 +1,20 @@
+# -*- tty colors
+if [ "$TERM" = "linux" ]; then
+	echo -en "\e]P02d1d35"black
+	echo -en "\e]P1e25057"darkred
+	echo -en "\e]P2b6ca68"darkgreen
+	echo -en "\e]P3efbb43"brown
+	echo -en "\e]P48dafe2"darkblue
+	echo -en "\e]P5a98de2"darkmagenta
+	echo -en "\e]P6d65ca5"darkcyan
+	echo -en "\e]P7a181b1"lightgrey
+	echo -en "\e]P8543663"darkgrey
+	echo -en "\e]P9eb8489"red
+	echo -en "\e]PAccda95"green
+	echo -en "\e]PBf4d07c"yellow
+	echo -en "\e]PCb9d0f4"blue
+	echo -en "\e]PDc0a7f1"magenta
+	echo -en "\e]PEeb84c2"cyan
+	echo -en "\e]PFdbc8e5"white
+	clearfor background artifacting
+fi

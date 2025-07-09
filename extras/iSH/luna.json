@@ -1,0 +1,29 @@
+{
+	"name": "luna",
+	"shared": {
+		"backgroundColor": "#432b50",
+		"colorPaletteOverrides": [
+			"#543663",
+			"#e25057",
+			"#b6ca68",
+			"#efbb43",
+			"#8dafe2",
+			"#a98de2",
+			"#d65ca5",
+			"#a181b1",
+			"#654077",
+			"#eb8489",
+			"#ccda95",
+			"#f4d07c",
+			"#b9d0f4",
+			"#c0a7f1",
+			"#eb84c2",
+			"#dbc8e5"
+		],
+		"cursorColor": "#dbc8e5",
+		"foregroundColor": "#dbc8e5"
+	},
+	"version": 1
+}
+
+
