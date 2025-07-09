@@ -111,8 +111,8 @@ local theme = lush(function(injected_functions)
 		Boolean        { Character },
 		Float          { Character },
 
-		Identifier     { fg = mercury },
-		Function       { fg = usagi },
+		Identifier     { fg = usagi },
+		Function       { fg = moon },
 
 		Statement      { fg = rei, gui = "bold" },
 		Conditional    { Statement },
