@@ -247,12 +247,12 @@ local theme = lush(function(injected_functions)
 		MiniTablineModifiedVisible { MiniTablineVisible, gui = "bold" },
 		MiniTablineModifiedHidden { MiniTablineHidden, gui = "bold" },
 		MiniTablineFill					{ TabLineFill },
-		RenderMarkdownH1Bg			{ bg = twilight, fg = moon },
-		RenderMarkdownH2Bg			{ bg = twilight, fg = mercury },
-		RenderMarkdownH3Bg			{ bg = twilight, fg = venus },
-		RenderMarkdownH4Bg			{ bg = twilight, fg = mars },
-		RenderMarkdownH5Bg			{ bg = twilight, fg = jupiter },
-		RenderMarkdownH6Bg			{ bg = twilight, fg = saturn },
+		RenderMarkdownH1Bg			{ bg = moon, fg = midnight },
+		RenderMarkdownH2Bg			{ bg = mercury, fg = midnight },
+		RenderMarkdownH3Bg			{ bg = venus, fg = midnight },
+		RenderMarkdownH4Bg			{ bg = mars, fg = midnight },
+		RenderMarkdownH5Bg			{ bg = jupiter, fg = midnight },
+		RenderMarkdownH6Bg			{ bg = saturn, fg = midnight },
 		TroubleIndent						{ bg = kamen, fg = deadmoon },
 		TroublePos							{ bg = kamen, fg = deadmoon }
 	}
