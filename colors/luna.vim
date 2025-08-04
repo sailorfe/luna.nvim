@@ -31,7 +31,7 @@ highlight! link @constant.macro Define
 highlight! link @define Define
 highlight Delimiter guifg=#A98DE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @punctuation Delimiter
-highlight DiagnosticError guifg=#D3222B guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight DiagnosticError guifg=#E25057 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link DiagnosticFloatingError DiagnosticError
 highlight! link DiagnosticSignError DiagnosticError
 highlight! link DiagnosticVirtualTextError DiagnosticError
@@ -47,7 +47,7 @@ highlight DiagnosticOk guifg=#B6CA68 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link DiagnosticFloatingOk DiagnosticOk
 highlight! link DiagnosticSignOk DiagnosticOk
 highlight! link DiagnosticVirtualTextOk DiagnosticOk
-highlight DiagnosticUnderlineError guifg=#D3222B guibg=NONE guisp=NONE blend=NONE gui=underline
+highlight DiagnosticUnderlineError guifg=#E25057 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticUnderlineHint guifg=#D65CA5 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticUnderlineInfo guifg=#B9D0F4 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticUnderlineOk guifg=#B6CA68 guibg=NONE guisp=NONE blend=NONE gui=underline
@@ -58,12 +58,12 @@ highlight! link DiagnosticSignWarn DiagnosticWarn
 highlight! link DiagnosticVirtualTextWarn DiagnosticWarn
 highlight DiffAdd guifg=#432B50 guibg=#B6CA68 guisp=NONE blend=NONE gui=bold
 highlight DiffChange guifg=#432B50 guibg=#8DAFE2 guisp=NONE blend=NONE gui=bold
-highlight DiffDelete guifg=#432B50 guibg=#D3222B guisp=NONE blend=NONE gui=bold
+highlight DiffDelete guifg=#432B50 guibg=#E25057 guisp=NONE blend=NONE gui=bold
 highlight DiffText guifg=#D65CA5 guibg=NONE guisp=NONE blend=NONE gui=bold,italic
 highlight Directory guifg=#A98DE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight EndOfBuffer guifg=#826490 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Error guifg=#432B50 guibg=#D3222B guisp=NONE blend=NONE gui=NONE
-highlight ErrorMsg guifg=#E25057 guibg=#543663 guisp=NONE blend=NONE gui=NONE
+highlight Error guifg=#432B50 guibg=#E25057 guisp=NONE blend=NONE gui=NONE
+highlight ErrorMsg guifg=#F8777E guibg=#543663 guisp=NONE blend=NONE gui=NONE
 highlight! link @exception Exception
 highlight! link @float Float
 highlight FloatTitle guifg=#DBC8E5 guibg=NONE guisp=NONE blend=NONE gui=bold
@@ -76,7 +76,7 @@ highlight! link @function Function
 highlight! link @method Function
 highlight GitSignsAdd guifg=#CCDA95 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight GitSignsChange guifg=#B9D0F4 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight GitSignsDelete guifg=#E25057 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight GitSignsDelete guifg=#F8777E guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Identifier guifg=#EB84C2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @field Identifier
 highlight! link @namespace Identifier
@@ -97,7 +97,7 @@ highlight! link @macro Macro
 highlight MatchParen guifg=#EB84C2 guibg=#634672 guisp=NONE blend=NONE gui=bold
 highlight MiniDiffSignAdd guifg=#CCDA95 guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniDiffSignChange guifg=#B9D0F4 guibg=NONE guisp=NONE blend=NONE gui=italic
-highlight MiniDiffSignDelete guifg=#E25057 guibg=NONE guisp=NONE blend=NONE gui=italic
+highlight MiniDiffSignDelete guifg=#F8777E guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniStatuslineDevinfo guifg=#DBC8E5 guibg=#543663 guisp=NONE blend=NONE gui=NONE
 highlight! link MiniStatuslineFileinfo MiniStatuslineDevinfo
 highlight MiniStatuslineInactive guifg=#CFAFDE guibg=#2D1D35 guisp=NONE blend=NONE gui=NONE
@@ -105,7 +105,7 @@ highlight MiniStatuslineModeCommand guifg=#654077 guibg=#EB84C2 guisp=NONE blend
 highlight MiniStatuslineModeInsert guifg=#654077 guibg=#DBC8E5 guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeNormal guifg=#DBC8E5 guibg=#845D98 guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeOther guifg=#543663 guibg=#CCDA95 guisp=NONE blend=NONE gui=NONE
-highlight MiniStatuslineModeReplace guifg=#654077 guibg=#E25057 guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeReplace guifg=#654077 guibg=#F8777E guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeVisual guifg=#543663 guibg=#F4D07C guisp=NONE blend=NONE gui=NONE
 highlight MiniTablineModifiedCurrent guifg=#432B50 guibg=#CFAFDE guisp=NONE blend=NONE gui=bold,italic
 highlight MiniTablineModifiedHidden guifg=#826490 guibg=#32203C guisp=NONE blend=NONE gui=bold
@@ -141,7 +141,7 @@ highlight! link QuickFixLine Question
 highlight RenderMarkdownH1Bg guifg=#432B50 guibg=#D65CA5 guisp=NONE blend=NONE gui=NONE
 highlight RenderMarkdownH2Bg guifg=#432B50 guibg=#8DAFE2 guisp=NONE blend=NONE gui=NONE
 highlight RenderMarkdownH3Bg guifg=#432B50 guibg=#EFBB43 guisp=NONE blend=NONE gui=NONE
-highlight RenderMarkdownH4Bg guifg=#432B50 guibg=#D3222B guisp=NONE blend=NONE gui=NONE
+highlight RenderMarkdownH4Bg guifg=#432B50 guibg=#E25057 guisp=NONE blend=NONE gui=NONE
 highlight RenderMarkdownH5Bg guifg=#432B50 guibg=#B6CA68 guisp=NONE blend=NONE gui=NONE
 highlight RenderMarkdownH6Bg guifg=#432B50 guibg=#A98DE2 guisp=NONE blend=NONE gui=NONE
 highlight! link @repeat Repeat
@@ -158,11 +158,11 @@ highlight! link @character.special SpecialChar
 highlight! link @string.escape SpecialChar
 highlight! link @string.special SpecialChar
 highlight SpecialKey guifg=#A181B1 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight SpellBad guifg=#D3222B guibg=NONE guisp=NONE blend=NONE gui=undercurl
+highlight SpellBad guifg=#E25057 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellCap guifg=#B9D0F4 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellLocal guifg=#CCDA95 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellRare guifg=#EFBB43 guibg=NONE guisp=NONE blend=NONE gui=undercurl
-highlight Statement guifg=#E25057 guibg=NONE guisp=NONE blend=NONE gui=bold
+highlight Statement guifg=#F8777E guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link Conditional Statement
 highlight! link Exception Statement
 highlight! link Keyword Statement
