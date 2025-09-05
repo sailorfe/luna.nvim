@@ -4,6 +4,19 @@
 # Upstream: https://codeberg.org/sailorfe/luna.nvim/src/branch/main/extras/alacritty/luna.toml
 # -----------------------------------------------------------------------------
 
+[env]
+term = "xterm-256color"
+
+[font]
+normal = { family = "Cozette" }
+size = 11.0
+
+[window]
+dimensions = { columns = 120, lines = 28 }
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
 # Default colors
 [colors.primary]
 background = '#432b50'
@@ -22,7 +35,7 @@ yellow = '#efbb43'
 blue = '#8dafe2'
 magenta = '#a98de2'
 cyan = '#d65c85'
-white = '#a181b1'
+white = '#dbc8e5'
 
 # Bright colors
 [colors.bright]
@@ -33,4 +46,4 @@ yellow = '#f4d07c'
 blue = '#b9d0f4'
 magenta = '#c0a7f1'
 cyan = '#eb84c2'
-white = '#dbc8e5'
+white = '#ead9f2'
