@@ -62,5 +62,6 @@ there is an `extras/` dir with ports for
 <a name="acknowledgments"></a>
 ## acknowledgments
 
+- [fairyfloss](https://github.com/sailorhg/fairyfloss) for inspiring this journey into colorschemes to begin with, and the low-contrast pastels
 - [evangelion.nvim](https://github.com/xero/evangelion.nvim) for entire chunks of lua and weeb inspiration
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for dir structure
