@@ -39,7 +39,7 @@ return {
 the easiest method is probably just to run curl from your n/vim `colors` directory:
 
 ```sh
-curl -LO https://codeberg.org/sailorfe/luna.nvim/raw/branch/vim/colors/luna.vim
+curl -LO https://codeberg.org/sailorfe/luna.nvim/raw/branch/main/colors/luna.vim
 ```
 
 then set colorscheme with one of the folowing:
