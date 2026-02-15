@@ -1,16 +1,40 @@
--- LUA shipwright_build.lua
-
 local lushwright = require("shipwright.transform.lush")
-run(require("lua.lush_theme.luna"),
-	lushwright.to_lua,
-	{patchwrite, "lua/luna/theme.lua", "-- PATCH_OPEN", "-- PATCH_CLOSE"})
+local overwrite = require("shipwright.transform.overwrite")
+local append = require("shipwright.transform.append")
 
--- [[
--- local colorscheme = require("lua.lush_theme.luna")
--- local lushwright = require("shipwright.transform.lush")
+package.path = package.path .. ";./lua/?.lua"
 
--- run(colorscheme,
---  lushwright.to_vimscript,
---  {append, {"set background=dark", "let g:colors_name=\"luna\""}},
---  {overwrite, "colors/luna.vim"})
--- ]]
+local colorscheme = require("lush_theme.luna")
+
+local function make_vim_compatible(lines)
+  local cleaned = {}
+  for _, line in ipairs(lines) do
+    if not line:match("[@%.]") then
+      local scrubbed = line:gsub("blend=[^%s]+", "")
+      table.insert(cleaned, scrubbed)
+    end
+  end
+  return cleaned
+end
+
+
+run(colorscheme,
+	lushwright.to_vimscript,
+  make_vim_compatible,
+  {append, {
+    "if has('termguicolors')",
+    "  set termguicolors",
+    "endif",
+    "let g:colors_name=\"luna\"",
+    "set background=dark",
+    "highlight! link htmlLink String",
+    "highlight! link mkdLink String",
+    "highlight! link mkdURL Identifier",
+    "",
+    "highlight SpellBad gui=undercurl guibg=NONE",
+    "highlight Error guibg=NONE",
+		"highlight! link Title Normal",
+    "highlight mkdHeading guibg=NONE gui=bold",
+	}},
+  {overwrite, "colors/luna.vim"}
+)

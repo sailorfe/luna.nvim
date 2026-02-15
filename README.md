@@ -23,7 +23,7 @@ with lazy:
 
 ```lua
 return {
-    "sailorfe/luna.nvim",
+    "https://codeberg.org/sailorfe/luna.nvim",
     opts = {
         -- transparent = false,
         -- overrides = false,
@@ -53,7 +53,7 @@ then set colorscheme with one of the folowing:
 
 there is an `extras/` dir with ports for
 
-- `alacritty`, `foot` and `wezterm`: what i alternate between in [my sway setup](https://codeberg.org/sailorfe/dots)
+- `alacritty` and `foot`: what i alternate between in [my sway setup](https://codeberg.org/sailorfe/dots)
 - `termux`: may lag behind a bit
 - `tty`: plain bash colors for the console
 

@@ -1,7 +1,7 @@
 {
   "fg": "#dbc8e5",
-  "bg": "#432b50",
-	"black": "#543663",
+  "bg": "#37273f",
+	"black": "#4d3659",
 	"red": "#e25057",
 	"green": "#b6ca68",
 	"yellow": "#efbb43",
@@ -9,7 +9,7 @@
 	"magenta": "#a98de2",
 	"cyan": "#d65ca5",
 	"white": "#dbc8e5",
-	"bright_black": "#654077",
+	"bright_black": "#583e65",
 	"bright_red": "#f8777e",
 	"bright_green": "#ccda95",
 	"bright_yellow": "#f4d07c",

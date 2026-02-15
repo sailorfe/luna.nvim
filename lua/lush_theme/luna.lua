@@ -1,19 +1,19 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local tuxedo			= hsl(280, 30, 16)
-local kamen				= hsl(280, 30, 18)
-local midnight		= hsl(280, 30, 24)
-local twilight		=	hsl(280, 30, 30)
-local moonlight		= hsl(280, 30, 36)
-local millennium	= hsl(280, 30, 42)
-local silver			= hsl(280, 18, 48)
-local diana				= hsl(280, 24, 60)
+local tuxedo			= hsl(280, 24, 12)
+local kamen				= hsl(280, 24, 16)
+local midnight		= hsl(280, 24, 20)
+local twilight		=	hsl(280, 24, 24)
+local moonlight		= hsl(280, 24, 28)
+local millennium	= hsl(280, 24, 32)
+local silver			= hsl(280, 18, 60)
+local diana				= hsl(280, 18, 72)
 local crystal			= hsl(280, 36, 84)
 local artemis			= hsl(280, 48, 90)
-local nehellenia	= hsl(280, 24, 24)
-local mugen				= hsl(280, 24, 36)
-local deadmoon		= hsl(280, 24, 48)
+local nehellenia	= hsl(280, 30, 24)
+local mugen				= hsl(280, 30, 36)
+local deadmoon		= hsl(280, 30, 48)
 local infinity		= hsl(280, 42, 78)
 local moon				= hsl(324, 60, 60)
 local usagi				= hsl(324, 72, 72)
@@ -102,7 +102,7 @@ local theme = lush(function(injected_functions)
 		WinBar         { bg = tuxedo, gui = "bold" },
 		WinBarNC       { bg = tuxedo },
 
-		Comment        { fg = silver, gui = "italic" },
+		Comment        { fg = silver },
 
 		Constant       { fg = venus },
 		String         { fg = jupiter },
