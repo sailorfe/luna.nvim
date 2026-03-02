@@ -19,31 +19,31 @@ draw_bold_text_with_bright_colors = true
 
 # Default colors
 [colors.primary]
-background = '#37273f'
-foreground = '#dbc8e5'
+background = '#2c1f33'
+foreground = '#ead9f2'
 
 #[colors.cursor]
-#cursor = '#dbc8e5'
-#text = '#37272f'
+#cursor = '#ead9f2'
+#text = '#2c1f33'
 
 # Normal colors
 [colors.normal]
-black = '#4d3659'
-red = '#e25057'
-green = '#b6ca68'
-yellow = '#efbb43'
-blue = '#8dafe2'
-magenta = '#a98de2'
-cyan = '#d65c85'
-white = '#dbc8e5'
+black = '#422e4d'
+red = '#f07575'
+green = '#d1f075'
+yellow = '#f0d175'
+blue = '#7db2e8'
+magenta = '#b27de8'
+cyan = '#e87db3'
+white = '#ead9f2'
 
 # Bright colors
 [colors.bright]
-black = '#583e65'
-red = '#f8777e'
-green = '#ccda95'
-yellow = '#f4d07c'
-blue = '#b9d0f4'
-magenta = '#c0a7f1'
-cyan = '#eb84c2'
-white = '#ead9f2'
+black = '#533960'
+red = '#fd9696'
+green = '#e3fd96'
+yellow = '#fde396'
+blue = '#9dc9f6'
+magenta = '#c99df6'
+cyan = '#f69dca'
+white = '#f8ebff'
