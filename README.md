@@ -1,9 +1,9 @@
 # luna.nvim
 
-a purple neovim colorscheme spiritually descended from [fairyfloss](https://github.com/sailorhg/fairyfloss) and the lighter, lower-contrast twin of [moonqueen.nvim](https://codeberg.org/sailorfe/moonqueen.nvim). currently ported for alacritty, foot, and wezterm.
+a purple neovim colorscheme spiritually descended from [fairyfloss](https://github.com/sailorhg/fairyfloss) and the lighter, lower-contrast twin of [moonqueen.nvim](https://codeberg.org/sailorfe/moonqueen.nvim). currently ported for foot and alacritty.
 
 <div align="center">
-![alacritty](grim.png)
+![foot](grim.png)
 </div>
 
 <!-- toc -->
@@ -27,39 +27,39 @@ with lazy:
 ```lua
 return {
     "https://codeberg.org/sailorfe/luna.nvim",
-    opts = {
-        -- transparent = false,
-        -- overrides = false,
-    },
+    dependencies = "rktjmp/lush.nvim",
     init function()
         vim.cmd.colorscheme("luna")
     end,
 }
 ```
 
+or, instead of `init function()`, call `vim.cmd.colorscheme('luna')` in your `init.lua` after plugin load.
+
 ### vimscript
 
-the easiest method is probably just to run curl from your n/vim `colors` directory:
+with vim-plug:
+
+```vim
+Plug 'https://codeberg.org/sailorfe/luna.nvim', { 'as': 'luna' }
+```
+
+or place `colors/luna.vim` anywhere in your runtime path:
 
 ```sh
 curl -LO https://codeberg.org/sailorfe/luna.nvim/raw/branch/main/colors/luna.vim
 ```
 
-then set colorscheme with one of the folowing:
-
-- `init.lua`: `vim.cmd.colorscheme("luna")`
-- `.vimrc`: `set colorscheme "luna"`
-- the command `:colorscheme luna`
+then set colorscheme with `colorscheme luna` in your `vimrc` or temporarily as a command.
 
 ## extras
 
 there is an `extras/` dir with ports for
 
 - `alacritty` and `foot`: what i alternate between in [my sway setup](https://codeberg.org/sailorfe/dots)
-- `termux`: may lag behind a bit
 - `tty`: plain bash colors for the console
 
-`luna.json` is included to in case you want to port this theme to whatever emulator you use. if you do, please make pull request!
+`luna.json` is included in case you want to port this theme to whatever emulator you use. if you do, [please make pull request](https://codeberg.org/sailorfe/luna.nvim/pulls)!
 
 ## acknowledgments
 
