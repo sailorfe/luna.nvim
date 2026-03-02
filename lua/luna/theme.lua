@@ -4,7 +4,7 @@ local hsl = lush.hsl
 -- base colors
 local base = hsl(280, 25, 16)
 local surface = hsl(280, 25, 24)
-local overlay = hsl(280, 25, 28)
+local overlay = hsl(280, 25, 30)
 -- text colors
 local muted = hsl(280, 15, 40)
 local faint = hsl(280, 25, 70)
