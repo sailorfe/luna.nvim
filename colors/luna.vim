@@ -1,170 +1,162 @@
-highlight Normal guifg=#DBC8E5 guibg=#37273F guisp=NONE  gui=NONE
-highlight! link MiniStatuslineFilename Normal
-highlight! link StatusLine Normal
-highlight Character guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=NONE
-highlight! link Boolean Character
-highlight! link Float Character
-highlight! link Number Character
-highlight ColorColumn guifg=NONE guibg=#4D3659 guisp=NONE  gui=NONE
-highlight Comment guifg=#9F87AB guibg=NONE guisp=NONE  gui=NONE
-highlight! link LspCodeLens Comment
-highlight! link LspCodeLensSeparator Comment
-highlight Conceal guifg=#9F87AB guibg=NONE guisp=NONE  gui=NONE
-highlight Constant guifg=#EFBB43 guibg=NONE guisp=NONE  gui=NONE
-highlight CurSearch guifg=#422F4C guibg=#F4D07C guisp=NONE  gui=NONE
+highlight Normal guifg=#EAD9F2 guibg=#2C1F33 guisp=NONE  gui=NONE
+highlight ColorColumn guifg=NONE guibg=#422E4D guisp=NONE  gui=NONE
+highlight Comment guifg=#B99FC6 guibg=NONE guisp=NONE  gui=italic
+highlight Conceal guifg=#6B5775 guibg=NONE guisp=NONE  gui=NONE
+highlight Constant guifg=#F0D175 guibg=NONE guisp=NONE  gui=NONE
+highlight! link Boolean Constant
+highlight! link Character Constant
+highlight! link Float Constant
+highlight! link Number Constant
+highlight! link String Constant
+highlight CurSearch guifg=#2C1F33 guibg=#F0D175 guisp=NONE  gui=NONE
 highlight! link IncSearch CurSearch
-highlight Cursor guifg=#37273F guibg=#DBC8E5 guisp=NONE  gui=NONE
+highlight Cursor guifg=#2C1F33 guibg=#EAD9F2 guisp=NONE  gui=NONE
 highlight! link CursorIM Cursor
-highlight! link WildMenu Cursor
 highlight! link lCursor Cursor
-highlight CursorColumn guifg=NONE guibg=#422F4C guisp=NONE  gui=NONE
-highlight! link CursorLine CursorColumn
-highlight CursorLineNr guifg=#EB84C2 guibg=#422F4C guisp=NONE  gui=bold
-highlight Delimiter guifg=#A98DE2 guibg=NONE guisp=NONE  gui=NONE
-highlight DiagnosticError guifg=#E25057 guibg=NONE guisp=NONE  gui=NONE
+highlight CursorColumn guifg=NONE guibg=#533960 guisp=NONE  gui=NONE
+highlight CursorLine guifg=NONE guibg=#533960 guisp=NONE  gui=NONE
+highlight CursorLineNr guifg=#EAD9F2 guibg=NONE guisp=NONE  gui=bold
+highlight Delimiter guifg=#EAD9F2 guibg=NONE guisp=NONE  gui=NONE
+highlight DiagnosticDeprecated guifg=#6B5775 guibg=NONE guisp=NONE  gui=strikethrough
+highlight DiagnosticError guifg=#F07575 guibg=NONE guisp=NONE  gui=NONE
 highlight! link DiagnosticFloatingError DiagnosticError
 highlight! link DiagnosticSignError DiagnosticError
-highlight! link DiagnosticVirtualTextError DiagnosticError
-highlight DiagnosticHint guifg=#D65CA5 guibg=NONE guisp=NONE  gui=NONE
+highlight DiagnosticHint guifg=#B27DE8 guibg=NONE guisp=NONE  gui=NONE
 highlight! link DiagnosticFloatingHint DiagnosticHint
 highlight! link DiagnosticSignHint DiagnosticHint
-highlight! link DiagnosticVirtualTextHint DiagnosticHint
-highlight DiagnosticInfo guifg=#B9D0F4 guibg=NONE guisp=NONE  gui=NONE
+highlight DiagnosticInfo guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=NONE
 highlight! link DiagnosticFloatingInfo DiagnosticInfo
 highlight! link DiagnosticSignInfo DiagnosticInfo
-highlight! link DiagnosticVirtualTextInfo DiagnosticInfo
-highlight DiagnosticOk guifg=#B6CA68 guibg=NONE guisp=NONE  gui=NONE
+highlight DiagnosticOk guifg=#D1F075 guibg=NONE guisp=NONE  gui=NONE
 highlight! link DiagnosticFloatingOk DiagnosticOk
 highlight! link DiagnosticSignOk DiagnosticOk
-highlight! link DiagnosticVirtualTextOk DiagnosticOk
-highlight DiagnosticUnderlineError guifg=#E25057 guibg=NONE guisp=NONE  gui=underline
-highlight DiagnosticUnderlineHint guifg=#D65CA5 guibg=NONE guisp=NONE  gui=underline
-highlight DiagnosticUnderlineInfo guifg=#B9D0F4 guibg=NONE guisp=NONE  gui=underline
-highlight DiagnosticUnderlineOk guifg=#B6CA68 guibg=NONE guisp=NONE  gui=underline
-highlight DiagnosticUnderlineWarn guifg=#F4D07C guibg=NONE guisp=NONE  gui=underline
-highlight DiagnosticWarn guifg=#F4D07C guibg=NONE guisp=NONE  gui=NONE
+highlight DiagnosticUnderlineError guifg=#F07575 guibg=NONE guisp=NONE  gui=undercurl
+highlight DiagnosticUnderlineHint guifg=#B27DE8 guibg=NONE guisp=NONE  gui=undercurl
+highlight DiagnosticUnderlineInfo guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=undercurl
+highlight DiagnosticUnderlineOk guifg=#D1F075 guibg=NONE guisp=NONE  gui=undercurl
+highlight DiagnosticUnderlineWarn guifg=#F0D175 guibg=NONE guisp=NONE  gui=undercurl
+highlight DiagnosticVirtualTextError guifg=#F07575 guibg=NONE guisp=NONE  gui=italic
+highlight DiagnosticVirtualTextHint guifg=#B27DE8 guibg=NONE guisp=NONE  gui=italic
+highlight DiagnosticVirtualTextInfo guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=italic
+highlight DiagnosticVirtualTextOk guifg=#D1F075 guibg=NONE guisp=NONE  gui=italic
+highlight DiagnosticVirtualTextWarn guifg=#F0D175 guibg=NONE guisp=NONE  gui=italic
+highlight DiagnosticWarn guifg=#F0D175 guibg=NONE guisp=NONE  gui=NONE
 highlight! link DiagnosticFloatingWarn DiagnosticWarn
 highlight! link DiagnosticSignWarn DiagnosticWarn
-highlight! link DiagnosticVirtualTextWarn DiagnosticWarn
-highlight DiffAdd guifg=#37273F guibg=#B6CA68 guisp=NONE  gui=bold
-highlight DiffChange guifg=#37273F guibg=#8DAFE2 guisp=NONE  gui=bold
-highlight DiffDelete guifg=#37273F guibg=#E25057 guisp=NONE  gui=bold
-highlight DiffText guifg=#D65CA5 guibg=NONE guisp=NONE  gui=bold,italic
-highlight Directory guifg=#A98DE2 guibg=NONE guisp=NONE  gui=NONE
-highlight EndOfBuffer guifg=#9F87AB guibg=NONE guisp=NONE  gui=NONE
-highlight Error guifg=#37273F guibg=#E25057 guisp=NONE  gui=NONE
-highlight ErrorMsg guifg=#F8777E guibg=#422F4C guisp=NONE  gui=NONE
-highlight FloatTitle guifg=#DBC8E5 guibg=NONE guisp=NONE  gui=bold
-highlight FoldColumn guifg=#583E65 guibg=NONE guisp=NONE  gui=NONE
-highlight! link CursorLineFold FoldColumn
-highlight! link CursorLineSign FoldColumn
-highlight Folded guifg=#DBC8E5 guibg=#2C1F33 guisp=NONE  gui=NONE
-highlight Function guifg=#D65CA5 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsAdd guifg=#CCDA95 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsChange guifg=#B9D0F4 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsDelete guifg=#F8777E guibg=NONE guisp=NONE  gui=NONE
-highlight Identifier guifg=#EB84C2 guibg=NONE guisp=NONE  gui=NONE
-highlight Ignore guifg=#BCABC4 guibg=NONE guisp=NONE  gui=NONE
-highlight! link Search IncSearch
-highlight LineNr guifg=#CFAFDE guibg=#654077 guisp=NONE  gui=NONE
+highlight DiffAdd guifg=#2C1F33 guibg=#D1F075 guisp=NONE  gui=NONE
+highlight DiffChange guifg=#2C1F33 guibg=#6B5775 guisp=NONE  gui=NONE
+highlight DiffDelete guifg=#F07575 guibg=NONE guisp=NONE  gui=bold
+highlight DiffText guifg=#2C1F33 guibg=#7DB2E8 guisp=NONE  gui=NONE
+highlight Directory guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=NONE
+highlight EndOfBuffer guifg=#B99FC6 guibg=NONE guisp=NONE  gui=NONE
+highlight Error guifg=#2C1F33 guibg=#F07575 guisp=NONE  gui=NONE
+highlight ErrorMsg guifg=#F07575 guibg=NONE guisp=NONE  gui=bold
+highlight FloatBorder guifg=#6B5775 guibg=#422E4D guisp=NONE  gui=NONE
+highlight! link FloatFooter FloatBorder
+highlight FloatTitle guifg=#B27DE8 guibg=#422E4D guisp=NONE  gui=bold
+highlight FoldColumn guifg=#7C568F guibg=#422E4D guisp=NONE  gui=NONE
+highlight Folded guifg=#B99FC6 guibg=#2B1934 guisp=NONE  gui=NONE
+highlight Function guifg=#B27DE8 guibg=NONE guisp=NONE  gui=NONE
+highlight GitSignsAdd guifg=#B27DE8 guibg=NONE guisp=NONE  gui=NONE
+highlight GitSignsChange guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=NONE
+highlight GitSignsDelete guifg=#F07575 guibg=NONE guisp=NONE  gui=NONE
+highlight Identifier guifg=#E87DB3 guibg=NONE guisp=NONE  gui=NONE
+highlight Ignore guifg=#6B5775 guibg=NONE guisp=NONE  gui=NONE
+highlight LineNr guifg=#6B5775 guibg=NONE guisp=NONE  gui=NONE
 highlight! link LineNrAbove LineNr
 highlight! link LineNrBelow LineNr
-highlight MatchParen guifg=#EB84C2 guibg=#654077 guisp=NONE  gui=bold
-highlight MiniDiffSignAdd guifg=#CCDA95 guibg=NONE guisp=NONE  gui=italic
-highlight MiniDiffSignChange guifg=#B9D0F4 guibg=NONE guisp=NONE  gui=italic
-highlight MiniDiffSignDelete guifg=#F8777E guibg=NONE guisp=NONE  gui=italic
-highlight MiniStatuslineDevinfo guifg=#DBC8E5 guibg=#422F4C guisp=NONE  gui=NONE
+highlight MatchParen guifg=NONE guibg=#7C568F guisp=NONE  gui=bold
+highlight MiniDiffSignAdd guifg=#B27DE8 guibg=NONE guisp=NONE  gui=italic
+highlight MiniDiffSignChange guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=italic
+highlight MiniDiffSignDelete guifg=#F07575 guibg=NONE guisp=NONE  gui=italic
+highlight MiniStatuslineDevinfo guifg=#EAD9F2 guibg=#533960 guisp=NONE  gui=NONE
 highlight! link MiniStatuslineFileinfo MiniStatuslineDevinfo
-highlight MiniStatuslineInactive guifg=#CFAFDE guibg=#211726 guisp=NONE  gui=NONE
-highlight MiniStatuslineModeCommand guifg=#4D3659 guibg=#EB84C2 guisp=NONE  gui=NONE
-highlight MiniStatuslineModeInsert guifg=#4D3659 guibg=#DBC8E5 guisp=NONE  gui=NONE
-highlight MiniStatuslineModeNormal guifg=#DBC8E5 guibg=#87569F guisp=NONE  gui=NONE
-highlight MiniStatuslineModeOther guifg=#422F4C guibg=#CCDA95 guisp=NONE  gui=NONE
-highlight MiniStatuslineModeReplace guifg=#4D3659 guibg=#F8777E guisp=NONE  gui=NONE
-highlight MiniStatuslineModeVisual guifg=#422F4C guibg=#F4D07C guisp=NONE  gui=NONE
-highlight MiniTablineModifiedCurrent guifg=#37273F guibg=#CFAFDE guisp=NONE  gui=bold,italic
-highlight MiniTablineModifiedHidden guifg=#9F87AB guibg=#2C1F33 guisp=NONE  gui=bold
-highlight MiniTablineModifiedVisible guifg=#C0A7F1 guibg=#422F4C guisp=NONE  gui=bold
-highlight MiniTablineVisible guifg=#C0A7F1 guibg=#422F4C guisp=NONE  gui=NONE
-highlight ModeMsg guifg=#DBC8E5 guibg=NONE guisp=NONE  gui=bold
-highlight MoreMsg guifg=#583E65 guibg=NONE guisp=NONE  gui=NONE
-highlight MsgArea guifg=#DBC8E5 guibg=NONE guisp=NONE  gui=NONE
-highlight MsgSeparator guifg=#37273F guibg=#BCABC4 guisp=NONE  gui=NONE
-highlight NonText guifg=#9F87AB guibg=NONE guisp=NONE  gui=NONE
-highlight NormalFloat guifg=#BCABC4 guibg=#2C1F33 guisp=NONE  gui=NONE
-highlight! link FloatBorder NormalFloat
-highlight NormalNC guifg=#9F87AB guibg=NONE guisp=NONE  gui=NONE
-highlight Operator guifg=#F4D07C guibg=NONE guisp=NONE  gui=NONE
-highlight Pmenu guifg=#DBC8E5 guibg=#2C1F33 guisp=NONE  gui=NONE
-highlight! link PmenuExtra Pmenu
-highlight! link PmenuKind Pmenu
-highlight! link PmenuSbar Pmenu
-highlight PmenuSel guifg=#2C1F33 guibg=#DBC8E5 guisp=NONE  gui=NONE
-highlight! link PmenuExtraSel PmenuSel
-highlight! link PmenuKindSel PmenuSel
-highlight PmenuThumb guifg=#EAD9F2 guibg=#9F87AB guisp=NONE  gui=NONE
-highlight PreProc guifg=#A98DE2 guibg=NONE guisp=NONE  gui=NONE
+highlight MiniStatuslineFilename guifg=#B99FC6 guibg=#422E4D guisp=NONE  gui=NONE
+highlight MiniStatuslineInactive guifg=#6B5775 guibg=#2C1F33 guisp=NONE  gui=NONE
+highlight MiniStatuslineModeCommand guifg=#2C1F33 guibg=#7DB2E8 guisp=NONE  gui=bold
+highlight MiniStatuslineModeInsert guifg=#2C1F33 guibg=#EAD9F2 guisp=NONE  gui=bold
+highlight MiniStatuslineModeNormal guifg=#EAD9F2 guibg=#7C568F guisp=NONE  gui=bold
+highlight MiniStatuslineModeOther guifg=#2C1F33 guibg=#D1F075 guisp=NONE  gui=bold
+highlight MiniStatuslineModeReplace guifg=#2C1F33 guibg=#F07575 guisp=NONE  gui=bold
+highlight MiniStatuslineModeVisual guifg=#2C1F33 guibg=#B27DE8 guisp=NONE  gui=bold
+highlight MiniTablineVisible guifg=#F0D175 guibg=#422E4D guisp=NONE  gui=NONE
+highlight ModeMsg guifg=#EAD9F2 guibg=NONE guisp=NONE  gui=bold
+highlight MoreMsg guifg=#D1F075 guibg=NONE guisp=NONE  gui=NONE
+highlight MsgArea guifg=#EAD9F2 guibg=NONE guisp=NONE  gui=NONE
+highlight MsgSeparator guifg=#533960 guibg=NONE guisp=NONE  gui=NONE
+highlight NonText guifg=#6B5775 guibg=NONE guisp=NONE  gui=NONE
+highlight NormalFloat guifg=#EAD9F2 guibg=#422E4D guisp=NONE  gui=NONE
+highlight NormalNC guifg=#B99FC6 guibg=#2C1F33 guisp=NONE  gui=NONE
+highlight Operator guifg=#EAD9F2 guibg=NONE guisp=NONE  gui=NONE
+highlight Pmenu guifg=#EAD9F2 guibg=#422E4D guisp=NONE  gui=NONE
+highlight PmenuExtra guifg=#6B5775 guibg=#422E4D guisp=NONE  gui=NONE
+highlight PmenuExtraSel guifg=#B99FC6 guibg=#533960 guisp=NONE  gui=NONE
+highlight PmenuKind guifg=#E87DB3 guibg=#422E4D guisp=NONE  gui=NONE
+highlight PmenuKindSel guifg=#E87DB3 guibg=#533960 guisp=NONE  gui=bold
+highlight PmenuMatch guifg=#B27DE8 guibg=NONE guisp=NONE  gui=bold
+highlight PmenuMatchSel guifg=#B27DE8 guibg=NONE guisp=NONE  gui=bold,underline
+highlight PmenuSbar guifg=NONE guibg=#533960 guisp=NONE  gui=NONE
+highlight PmenuSel guifg=#B27DE8 guibg=#533960 guisp=NONE  gui=bold
+highlight PmenuThumb guifg=NONE guibg=#7C568F guisp=NONE  gui=NONE
+highlight PreProc guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=NONE
 highlight! link Define PreProc
 highlight! link Include PreProc
 highlight! link Macro PreProc
 highlight! link PreCondit PreProc
-highlight Question guifg=#EB84C2 guibg=NONE guisp=NONE  gui=NONE
-highlight! link QuickFixLine Question
-highlight RenderMarkdownH1Bg guifg=#37273F guibg=#D65CA5 guisp=NONE  gui=NONE
-highlight RenderMarkdownH2Bg guifg=#37273F guibg=#8DAFE2 guisp=NONE  gui=NONE
-highlight RenderMarkdownH3Bg guifg=#37273F guibg=#EFBB43 guisp=NONE  gui=NONE
-highlight RenderMarkdownH4Bg guifg=#37273F guibg=#E25057 guisp=NONE  gui=NONE
-highlight RenderMarkdownH5Bg guifg=#37273F guibg=#B6CA68 guisp=NONE  gui=NONE
-highlight RenderMarkdownH6Bg guifg=#37273F guibg=#A98DE2 guisp=NONE  gui=NONE
-highlight SignColumn guifg=NONE guibg=#432B50 guisp=NONE  gui=NONE
-highlight Special guifg=#C0A7F1 guibg=NONE guisp=NONE  gui=NONE
+highlight Question guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=NONE
+highlight QuickFixLine guifg=NONE guibg=#533960 guisp=NONE  gui=bold
+highlight RenderMarkdownH1Bg guifg=#E87DB3 guibg=#412A36 guisp=NONE  gui=bold
+highlight RenderMarkdownH2Bg guifg=#7DB2E8 guibg=#2A3641 guisp=NONE  gui=bold
+highlight RenderMarkdownH3Bg guifg=#F07575 guibg=#422929 guisp=NONE  gui=bold
+highlight RenderMarkdownH4Bg guifg=#D1F075 guibg=#3C4229 guisp=NONE  gui=bold
+highlight RenderMarkdownH5Bg guifg=#F0D175 guibg=#423C29 guisp=NONE  gui=bold
+highlight RenderMarkdownH6Bg guifg=#B27DE8 guibg=#362A41 guisp=NONE  gui=bold
+highlight Search guifg=#F0D175 guibg=#543663 guisp=NONE  gui=NONE
+highlight SignColumn guifg=NONE guibg=#2C1F33 guisp=NONE  gui=NONE
+highlight Special guifg=#E87DB3 guibg=NONE guisp=NONE  gui=NONE
 highlight! link Debug Special
-highlight! link SpecialComment Special
+highlight! link SpecialChar Special
 highlight! link Tag Special
-highlight SpecialChar guifg=#CCDA95 guibg=NONE guisp=NONE  gui=NONE
-highlight SpecialKey guifg=#BCABC4 guibg=NONE guisp=NONE  gui=NONE
-highlight SpellBad guifg=#E25057 guibg=NONE guisp=NONE  gui=undercurl
-highlight SpellCap guifg=#B9D0F4 guibg=NONE guisp=NONE  gui=undercurl
-highlight SpellLocal guifg=#CCDA95 guibg=NONE guisp=NONE  gui=undercurl
-highlight SpellRare guifg=#EFBB43 guibg=NONE guisp=NONE  gui=undercurl
-highlight Statement guifg=#F8777E guibg=NONE guisp=NONE  gui=bold
+highlight SpecialComment guifg=#B99FC6 guibg=NONE guisp=NONE  gui=bold
+highlight SpecialKey guifg=#6B5775 guibg=NONE guisp=NONE  gui=NONE
+highlight SpellBad guifg=#F07575 guibg=NONE guisp=NONE  gui=undercurl
+highlight SpellCap guifg=#F0D175 guibg=NONE guisp=NONE  gui=undercurl
+highlight SpellLocal guifg=#D1F075 guibg=NONE guisp=NONE  gui=undercurl
+highlight SpellRare guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=undercurl
+highlight Statement guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=bold
 highlight! link Conditional Statement
 highlight! link Exception Statement
 highlight! link Keyword Statement
 highlight! link Label Statement
 highlight! link Repeat Statement
-highlight StatusLineNC guifg=NONE guibg=#211726 guisp=NONE  gui=NONE
-highlight String guifg=#B6CA68 guibg=NONE guisp=NONE  gui=NONE
-highlight Substitute guifg=#4D3659 guibg=#EFBB43 guisp=NONE  gui=NONE
-highlight TabLine guifg=#9F87AB guibg=#2C1F33 guisp=NONE  gui=NONE
+highlight StatusLine guifg=#EAD9F2 guibg=#533960 guisp=NONE  gui=NONE
+highlight StatusLineNC guifg=#6B5775 guibg=#422E4D guisp=NONE  gui=NONE
+highlight Substitute guifg=#2C1F33 guibg=#7DB2E8 guisp=NONE  gui=NONE
+highlight TabLine guifg=#6B5775 guibg=#422E4D guisp=NONE  gui=NONE
 highlight! link MiniTablineHidden TabLine
-highlight TabLineFill guifg=NONE guibg=#211726 guisp=NONE  gui=NONE
-highlight! link MiniTablineFill TabLineFill
-highlight TabLineSel guifg=#37273F guibg=#CFAFDE guisp=NONE  gui=italic
+highlight TabLineFill guifg=NONE guibg=#2C1F33 guisp=NONE  gui=NONE
+highlight TabLineSel guifg=#B27DE8 guibg=#533960 guisp=NONE  gui=bold
 highlight! link MiniTablineCurrent TabLineSel
-highlight TermCursor guifg=#37273F guibg=#BCABC4 guisp=NONE  gui=NONE
-highlight TermCursorNC guifg=#BCABC4 guibg=NONE guisp=NONE  gui=NONE
-highlight Title guifg=NONE guibg=NONE guisp=NONE  gui=bold
-highlight Todo guifg=NONE guibg=NONE guisp=NONE  gui=bold
-highlight TroubleIndent guifg=#87569F guibg=#2C1F33 guisp=NONE  gui=NONE
-highlight TroublePos guifg=#87569F guibg=#2C1F33 guisp=NONE  gui=NONE
-highlight Type guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=NONE
+highlight TermCursor guifg=#2C1F33 guibg=#B27DE8 guisp=NONE  gui=NONE
+highlight TermCursorNC guifg=#2C1F33 guibg=#B99FC6 guisp=NONE  gui=NONE
+highlight Title guifg=#B27DE8 guibg=NONE guisp=NONE  gui=bold
+highlight Todo guifg=#F0D175 guibg=NONE guisp=NONE  gui=bold
+highlight TroubleIndent guifg=#B99FC6 guibg=#422E4D guisp=NONE  gui=NONE
+highlight TroublePos guifg=#B99FC6 guibg=#422E4D guisp=NONE  gui=NONE
+highlight Type guifg=#D1F075 guibg=NONE guisp=NONE  gui=NONE
 highlight! link StorageClass Type
 highlight! link Structure Type
-highlight! link Typedef Type
+highlight Typedef guifg=#D1F075 guibg=NONE guisp=NONE  gui=italic
 highlight Underlined guifg=NONE guibg=NONE guisp=NONE  gui=underline
-highlight VertSplit guifg=#422F4C guibg=NONE guisp=NONE  gui=NONE
-highlight! link Winseparator VertSplit
-highlight Visual guifg=#37273F guibg=#CFAFDE guisp=NONE  gui=NONE
-highlight! link LspReferenceRead Visual
-highlight! link LspReferenceText Visual
-highlight! link LspReferenceWrite Visual
-highlight! link LspSignatureActiveParameter Visual
-highlight VisualNOS guifg=#DBC8E5 guibg=#654077 guisp=NONE  gui=NONE
-highlight WarningMsg guifg=#C0A7F1 guibg=NONE guisp=NONE  gui=NONE
-highlight Whitespace guifg=#583E65 guibg=NONE guisp=NONE  gui=NONE
-highlight WinBar guifg=NONE guibg=#211726 guisp=NONE  gui=bold
-highlight WinBarNC guifg=NONE guibg=#211726 guisp=NONE  gui=NONE
+highlight VertSplit guifg=#422E4D guibg=NONE guisp=NONE  gui=NONE
+highlight Visual guifg=#2C1F33 guibg=#B27DE8 guisp=NONE  gui=NONE
+highlight! link VisualNOS Visual
+highlight WarningMsg guifg=#F0D175 guibg=NONE guisp=NONE  gui=NONE
+highlight Whitespace guifg=#533960 guibg=NONE guisp=NONE  gui=NONE
+highlight WildMenu guifg=#2C1F33 guibg=#EAD9F2 guisp=NONE  gui=NONE
+highlight WinBar guifg=#B99FC6 guibg=#543663 guisp=NONE  gui=NONE
+highlight WinBarNC guifg=#6B5775 guibg=#543663 guisp=NONE  gui=NONE
+highlight WinSeparator guifg=#422E4D guibg=NONE guisp=NONE  gui=NONE
 if has('termguicolors')
   set termguicolors
 endif
