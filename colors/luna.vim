@@ -158,11 +158,17 @@ highlight WinBar guifg=#B99FC6 guibg=#543663 guisp=NONE  gui=NONE
 highlight WinBarNC guifg=#6B5775 guibg=#543663 guisp=NONE  gui=NONE
 highlight WinSeparator guifg=#422E4D guibg=NONE guisp=NONE  gui=NONE
 highlight markdownH1 guifg=#E87DB3 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH1Delimiter markdownH1
 highlight markdownH2 guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH2Delimiter markdownH2
 highlight markdownH3 guifg=#F07575 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH3Delimiter markdownH3
 highlight markdownH4 guifg=#D1F075 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH4Delimiter markdownH4
 highlight markdownH5 guifg=#F0D175 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH5Delimiter markdownH5
 highlight markdownH6 guifg=#B27DE8 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH6Delimiter markdownH6
 if has('termguicolors')
   set termguicolors
 endif
