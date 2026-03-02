@@ -48,7 +48,7 @@ highlight DiffChange guifg=#2C1F33 guibg=#6B5775 guisp=NONE  gui=NONE
 highlight DiffDelete guifg=#F07575 guibg=NONE guisp=NONE  gui=bold
 highlight DiffText guifg=#2C1F33 guibg=#7DB2E8 guisp=NONE  gui=NONE
 highlight Directory guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=NONE
-highlight EndOfBuffer guifg=#B99FC6 guibg=NONE guisp=NONE  gui=NONE
+highlight EndOfBuffer guifg=#6B5775 guibg=NONE guisp=NONE  gui=NONE
 highlight Error guifg=#2C1F33 guibg=#F07575 guisp=NONE  gui=NONE
 highlight ErrorMsg guifg=#F07575 guibg=NONE guisp=NONE  gui=bold
 highlight FloatBorder guifg=#6B5775 guibg=#422E4D guisp=NONE  gui=NONE
@@ -73,7 +73,7 @@ highlight MiniStatuslineDevinfo guifg=#EAD9F2 guibg=#533960 guisp=NONE  gui=NONE
 highlight! link MiniStatuslineFileinfo MiniStatuslineDevinfo
 highlight MiniStatuslineFilename guifg=#B99FC6 guibg=#422E4D guisp=NONE  gui=NONE
 highlight MiniStatuslineInactive guifg=#6B5775 guibg=#2C1F33 guisp=NONE  gui=NONE
-highlight MiniStatuslineModeCommand guifg=#2C1F33 guibg=#7DB2E8 guisp=NONE  gui=bold
+highlight MiniStatuslineModeCommand guifg=#2C1F33 guibg=#E87DB3 guisp=NONE  gui=bold
 highlight MiniStatuslineModeInsert guifg=#2C1F33 guibg=#EAD9F2 guisp=NONE  gui=bold
 highlight MiniStatuslineModeNormal guifg=#EAD9F2 guibg=#7C568F guisp=NONE  gui=bold
 highlight MiniStatuslineModeOther guifg=#2C1F33 guibg=#D1F075 guisp=NONE  gui=bold
@@ -149,7 +149,7 @@ highlight! link Structure Type
 highlight Typedef guifg=#D1F075 guibg=NONE guisp=NONE  gui=italic
 highlight Underlined guifg=NONE guibg=NONE guisp=NONE  gui=underline
 highlight VertSplit guifg=#422E4D guibg=NONE guisp=NONE  gui=NONE
-highlight Visual guifg=#2C1F33 guibg=#B27DE8 guisp=NONE  gui=NONE
+highlight Visual guifg=NONE guibg=#7C568F guisp=NONE  gui=NONE
 highlight! link VisualNOS Visual
 highlight WarningMsg guifg=#F0D175 guibg=NONE guisp=NONE  gui=NONE
 highlight Whitespace guifg=#533960 guibg=NONE guisp=NONE  gui=NONE

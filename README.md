@@ -3,7 +3,9 @@
 a purple neovim colorscheme spiritually descended from [fairyfloss](https://github.com/sailorhg/fairyfloss) and the lighter, lower-contrast twin of [moonqueen.nvim](https://codeberg.org/sailorfe/moonqueen.nvim). currently ported for foot and alacritty.
 
 <div align="center">
+
 ![foot](grim.png)
+
 </div>
 
 <!-- toc -->

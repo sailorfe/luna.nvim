@@ -86,7 +86,7 @@ local theme = lush(function(injected_functions)
 		TermCursor({ bg = hotaru, fg = base }),
 		TermCursorNC({ bg = faint, fg = base }),
 
-		Visual({ bg = hotaru, fg = base }),
+		Visual({ bg = high }),
 		VisualNOS({ Visual }),
 		CurSearch({ bg = minako, fg = base }),
 		IncSearch({ CurSearch }),
@@ -98,7 +98,7 @@ local theme = lush(function(injected_functions)
 		NonText({ fg = muted }),
 		Whitespace({ fg = overlay }),
 		SpecialKey({ fg = muted }),
-		EndOfBuffer({ fg = faint }),
+		EndOfBuffer({ fg = muted }),
 
 		Directory({ fg = ami }),
 		Title({ fg = hotaru, gui = "bold" }),
@@ -354,7 +354,7 @@ local theme = lush(function(injected_functions)
 		MiniStatuslineModeInsert({ bg = text, fg = base, gui = "bold" }),
 		MiniStatuslineModeVisual({ bg = hotaru, fg = base, gui = "bold" }),
 		MiniStatuslineModeReplace({ bg = rei, fg = base, gui = "bold" }),
-		MiniStatuslineModeCommand({ bg = ami, fg = base, gui = "bold" }),
+		MiniStatuslineModeCommand({ bg = usagi, fg = base, gui = "bold" }),
 		MiniStatuslineModeOther({ bg = makoto, fg = base, gui = "bold" }),
 		MiniStatuslineDevinfo({ bg = overlay, fg = text }),
 		MiniStatuslineFilename({ bg = surface, fg = faint }),
