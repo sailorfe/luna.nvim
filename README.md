@@ -1,20 +1,23 @@
 # luna.nvim
 
-a pastel purple nvim colorscheme spiritually descended from [fairyfloss](https://github.com/sailorhg/fairyfloss) and the lighter, lower-contrast twin of [moonqueen.nvim](https://codeberg.org/sailorfe/moonqueen.nvim). currently ported for alacritty, foot, and wezterm.
+a purple neovim colorscheme spiritually descended from [fairyfloss](https://github.com/sailorhg/fairyfloss) and the lighter, lower-contrast twin of [moonqueen.nvim](https://codeberg.org/sailorfe/moonqueen.nvim). currently ported for alacritty, foot, and wezterm.
 
 <div align="center">
-
 ![alacritty](grim.png)
-
 </div>
 
-- <a href="#installation">installation</a>
-- <a href="#extras">extras</a>
-- <a href="#acknowledgments">acknowledgments</a>
+<!-- toc -->
+
+- [installation](#installation)
+    * [lua](#lua)
+    * [vimscript](#vimscript)
+- [extras](#extras)
+- [acknowledgments](#acknowledgments)
+
+<!-- tocstop -->
 
 this repository is mirrored to [github](https://github.com/sailorfe/luna.nvim) from [codeberg](https://codeberg.org/sailorfe/luna.nvim).
 
-<a name="installation"></a>
 ## installation
 
 ### lua
@@ -46,9 +49,8 @@ then set colorscheme with one of the folowing:
 
 - `init.lua`: `vim.cmd.colorscheme("luna")`
 - `.vimrc`: `set colorscheme "luna"`
-- the command  `:colorscheme luna`
+- the command `:colorscheme luna`
 
-<a name="extras"></a>
 ## extras
 
 there is an `extras/` dir with ports for
@@ -59,7 +61,6 @@ there is an `extras/` dir with ports for
 
 `luna.json` is included to in case you want to port this theme to whatever emulator you use. if you do, please make pull request!
 
-<a name="acknowledgments"></a>
 ## acknowledgments
 
 - [fairyfloss](https://github.com/sailorhg/fairyfloss) for inspiring this journey into colorschemes to begin with, and the low-contrast pastels
