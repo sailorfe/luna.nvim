@@ -2,9 +2,9 @@ local lush = require("lush")
 local hsl = lush.hsl
 
 -- base colors
-local base = hsl(280, 25, 16)
-local surface = hsl(280, 25, 24)
-local overlay = hsl(280, 25, 30)
+local base = hsl(280, 25, 14)
+local surface = hsl(280, 25, 20)
+local overlay = hsl(280, 25, 26)
 -- text colors
 local muted = hsl(280, 15, 40)
 local faint = hsl(280, 25, 70)
@@ -18,9 +18,9 @@ local ami = hsl(210, 70, 70)
 local hotaru = hsl(270, 70, 70)
 local usagi = hsl(330, 70, 70)
 -- highlights
-local low = hsl(280, 35, 15)
-local med = hsl(280, 30, 30)
-local high = hsl(280, 25, 45)
+local low = hsl(280, 24, 15)
+local med = hsl(280, 22, 30)
+local high = hsl(280, 20, 45)
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)

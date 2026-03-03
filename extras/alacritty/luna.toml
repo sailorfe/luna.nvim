@@ -19,16 +19,16 @@ draw_bold_text_with_bright_colors = true
 
 # Default colors
 [colors.primary]
-background = '#2c1f33'
+background = '#271b2d'
 foreground = '#ead9f2'
 
 #[colors.cursor]
 #cursor = '#ead9f2'
-#text = '#2c1f33'
+#text = '#271b2d'
 
 # Normal colors
 [colors.normal]
-black = '#422e4d'
+black = '#372640'
 red = '#f07575'
 green = '#d1f075'
 yellow = '#f0d175'
@@ -39,7 +39,7 @@ white = '#ead9f2'
 
 # Bright colors
 [colors.bright]
-black = '#533960'
+black = '#483253'
 red = '#fd9696'
 green = '#e3fd96'
 yellow = '#fde396'
