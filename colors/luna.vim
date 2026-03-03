@@ -44,7 +44,7 @@ highlight DiagnosticWarn guifg=#F0D175 guibg=NONE guisp=NONE  gui=NONE
 highlight! link DiagnosticFloatingWarn DiagnosticWarn
 highlight! link DiagnosticSignWarn DiagnosticWarn
 highlight DiffAdd guifg=#2C1F33 guibg=#D1F075 guisp=NONE  gui=NONE
-highlight DiffChange guifg=#2C1F33 guibg=#6B5775 guisp=NONE  gui=NONE
+highlight DiffChange guifg=#2C1F33 guibg=#F0D175 guisp=NONE  gui=NONE
 highlight DiffDelete guifg=#F07575 guibg=NONE guisp=NONE  gui=bold
 highlight DiffText guifg=#2C1F33 guibg=#7DB2E8 guisp=NONE  gui=NONE
 highlight Directory guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=NONE
@@ -57,17 +57,14 @@ highlight FloatTitle guifg=#B27DE8 guibg=#422E4D guisp=NONE  gui=bold
 highlight FoldColumn guifg=#7C568F guibg=#422E4D guisp=NONE  gui=NONE
 highlight Folded guifg=#B99FC6 guibg=#2B1934 guisp=NONE  gui=NONE
 highlight Function guifg=#B27DE8 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsAdd guifg=#B27DE8 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsChange guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsDelete guifg=#F07575 guibg=NONE guisp=NONE  gui=NONE
 highlight Identifier guifg=#E87DB3 guibg=NONE guisp=NONE  gui=NONE
 highlight Ignore guifg=#6B5775 guibg=NONE guisp=NONE  gui=NONE
 highlight LineNr guifg=#6B5775 guibg=NONE guisp=NONE  gui=NONE
 highlight! link LineNrAbove LineNr
 highlight! link LineNrBelow LineNr
 highlight MatchParen guifg=NONE guibg=#7C568F guisp=NONE  gui=bold
-highlight MiniDiffSignAdd guifg=#B27DE8 guibg=NONE guisp=NONE  gui=italic
-highlight MiniDiffSignChange guifg=#7DB2E8 guibg=NONE guisp=NONE  gui=italic
+highlight MiniDiffSignAdd guifg=#D1F075 guibg=NONE guisp=NONE  gui=italic
+highlight MiniDiffSignChange guifg=#F0D175 guibg=NONE guisp=NONE  gui=italic
 highlight MiniDiffSignDelete guifg=#F07575 guibg=NONE guisp=NONE  gui=italic
 highlight MiniStatuslineDevinfo guifg=#EAD9F2 guibg=#533960 guisp=NONE  gui=NONE
 highlight! link MiniStatuslineFileinfo MiniStatuslineDevinfo

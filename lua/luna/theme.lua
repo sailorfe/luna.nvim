@@ -108,7 +108,7 @@ local theme = lush(function(injected_functions)
 
 		-- diffs
 		DiffAdd({ bg = makoto, fg = base }),
-		DiffChange({ bg = muted, fg = base }),
+		DiffChange({ bg = minako, fg = base }),
 		DiffDelete({ fg = rei, gui = "bold" }),
 		DiffText({ bg = ami, fg = base }),
 
@@ -291,9 +291,9 @@ local theme = lush(function(injected_functions)
 		sym("@tag.attribute")({ fg = minako }),
 		sym("@tag.delimiter")({ fg = muted }),
 
-		sym("@diff.plus")({ fg = hotaru }),
+		sym("@diff.plus")({ fg = makoto }),
 		sym("@diff.minus")({ fg = rei }),
-		sym("@diff.delta")({ fg = ami }),
+		sym("@diff.delta")({ fg = minako }),
 
 		-- LSP semantic tokens (0.9+)
 		sym("@lsp.type.class")({ Type }),
@@ -336,9 +336,9 @@ local theme = lush(function(injected_functions)
 		markdownH6Delimiter({ markdownH6 }),
 
 		-- plugins
-		GitSignsAdd({ fg = hotaru }),
-		GitSignsChange({ fg = ami }),
-		GitSignsDelete({ fg = rei }),
+		GitSignsAdd({ sym("@diff.plus") }),
+		GitSignsChange({ sym("@diff.delta") }),
+		GitSignsDelete({ sym("@diff.minus") }),
 
 		RenderMarkdownH1Bg({ bg = usagi.darken(70).desaturate(70), fg = usagi, gui = "bold" }),
 		RenderMarkdownH2Bg({ bg = ami.darken(70).desaturate(70), fg = ami, gui = "bold" }),
@@ -347,9 +347,9 @@ local theme = lush(function(injected_functions)
 		RenderMarkdownH5Bg({ bg = minako.darken(70).desaturate(70), fg = minako, gui = "bold" }),
 		RenderMarkdownH6Bg({ bg = hotaru.darken(70).desaturate(70), fg = hotaru, gui = "bold" }),
 
-		MiniDiffSignAdd({ fg = hotaru, gui = "italic" }),
-		MiniDiffSignChange({ fg = ami, gui = "italic" }),
-		MiniDiffSignDelete({ fg = rei, gui = "italic" }),
+		MiniDiffSignAdd({ sym("@diff.plus"), gui = "italic" }),
+		MiniDiffSignChange({ sym("@diff.delta"), gui = "italic" }),
+		MiniDiffSignDelete({ sym("@diff.minus"), gui = "italic" }),
 		MiniStatuslineModeNormal({ bg = high, fg = text, gui = "bold" }),
 		MiniStatuslineModeInsert({ bg = text, fg = base, gui = "bold" }),
 		MiniStatuslineModeVisual({ bg = hotaru, fg = base, gui = "bold" }),
