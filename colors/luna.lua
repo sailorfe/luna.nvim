@@ -1,1 +1,1 @@
-require("luna").inthenameofthemoon{}
+require("luna").inthenameofthemoon()
