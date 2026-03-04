@@ -4,7 +4,7 @@ a purple neo/vim colorscheme spiritually descended from [fairyfloss](https://git
 
 <div align="center">
 
-![foot](grim.png)
+![foot](json.png)
 
 </div>
 
@@ -14,6 +14,7 @@ a purple neo/vim colorscheme spiritually descended from [fairyfloss](https://git
     * [lua](#lua)
     * [vimscript](#vimscript)
 - [extras](#extras)
+- [contributing](#contributing)
 - [acknowledgments](#acknowledgments)
 
 <!-- tocstop -->
@@ -57,13 +58,17 @@ then set colorscheme with `colorscheme luna` in your `vimrc` or temporarily as a
 
 there is an `extras/` dir with ports for
 
-- `alacritty` and `foot`: what i alternate between in [my sway setup](https://codeberg.org/sailorfe/dots)
-- `tty`: plain bash colors for the console
+- [alacritty](https://alacritty.org)
+- [foot](https://codeberg.org/dnkl/foot)
+- [termux](https://termux.dev)
+- `tty` for the console
 
-`luna.json` is included in case you want to port this theme to whatever emulator you use. if you do, [please make pull request](https://codeberg.org/sailorfe/luna.nvim/pulls)!
+## contributing
+
+if you would like to port luna to another terminal emulator or application, see `generator.py`. you'll have to write a dictionary template, but `generator.py` handles injecting hex values from `palette.json`. [submit pull requests on codeberg](https://codeberg.org/sailorfe/luna.nvim/pulls).
 
 ## acknowledgments
 
-- [fairyfloss](https://github.com/sailorhg/fairyfloss) for inspiring this journey into colorschemes to begin with, and the low-contrast pastels
+- [fairyfloss](https://github.com/sailorhg/fairyfloss) for inspiring this journey into colorschemes to begin with, and the low-contrast, magical girl vibes
 - [evangelion.nvim](https://github.com/xero/evangelion.nvim) for the entire shipwright build model
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for dir structure

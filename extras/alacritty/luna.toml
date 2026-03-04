@@ -1,49 +1,27 @@
-# -----------------------------------------------------------------------------
-# Luna Alacritty Colors
-# Theme: Luna
+# Luna for Alacritty
+# Author: sailorfe
 # Upstream: https://codeberg.org/sailorfe/luna.nvim/src/branch/main/extras/alacritty/luna.toml
-# -----------------------------------------------------------------------------
 
-[env]
-term = "xterm-256color"
-
-[font]
-normal = { family = "Cozette" }
-size = 11.0
-
-[window]
-dimensions = { columns = 120, lines = 28 }
-
-[colors]
-draw_bold_text_with_bright_colors = true
-
-# Default colors
 [colors.primary]
-background = '#271b2d'
-foreground = '#ead9f2'
+background = "#271B2D"
+foreground = "#EAD9F2"
 
-#[colors.cursor]
-#cursor = '#ead9f2'
-#text = '#271b2d'
-
-# Normal colors
 [colors.normal]
-black = '#372640'
-red = '#f07575'
-green = '#d1f075'
-yellow = '#f0d175'
-blue = '#7db2e8'
-magenta = '#b27de8'
-cyan = '#e87db3'
-white = '#ead9f2'
+black = "#372640"
+red   = "#F07575"
+green = "#D1F075"
+yellow = "#F0D175"
+blue  = "#7DB2E8"
+magenta  = "#B27DE8"
+cyan  = "#E87DB3"
+white = "#EAD9F2"
 
-# Bright colors
 [colors.bright]
-black = '#483253'
-red = '#fa9e9e'
-green = '#e3fa9e'
-yellow = '#fae39e'
-blue = '#a3ccf5'
-magenta = '#cca4f5'
-cyan = '#f5a3cc'
-white = '#f8ebff'
+black = "#483253"
+red   = "#FA9E9E"
+green = "#E3FA9E"
+yellow = "#FAE39E"
+blue  = "#A3CCF5"
+magenta  = "#CCA3F5"
+cyan  = "#F5A3CC"
+white = "#F8EBFF"
