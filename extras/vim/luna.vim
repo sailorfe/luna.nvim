@@ -1,19 +1,14 @@
 " luna v0.2.1 by sailorfe
 " built 2026-03-04
-"
+" https://codeberg.org/sailorfe/luna.nvim
+
+hi clear
 if has('termguicolors')
   set termguicolors
 endif
-let g:colors_name="luna"
-set background=dark
-highlight! link htmlLink String
-highlight! link mkdLink String
-highlight! link mkdURL Identifier
 
-highlight SpellBad gui=undercurl guibg=NONE
-highlight Error guibg=NONE
-highlight! link Title Normal
-highlight mkdHeading guibg=NONE gui=bold
+let g:colors_name='luna'
+set background=dark
 
 highlight Normal guifg=#EAD9F2 guibg=#271B2D guisp=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#372640 guisp=NONE gui=NONE
