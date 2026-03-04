@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 shopt -s extglob
-THEME="luna"
+THEME=$(jq -r '.name' metadata.json)
+HEADER=$(jq -r '"\" \(.name) v\(.version) by \(.author)\n\" built \(.updated)\n\""' metadata.json)
 
 case "${1:-}" in
 # == vim build ==
@@ -32,27 +33,29 @@ local function make_vim_compatible(lines)
     end
     return cleaned
 end
-shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, {
-    append,
-    {
-        "if has('termguicolors')",
-        "  set termguicolors",
-        "endif",
-        'let g:colors_name="luna"',
-        "set background=dark",
-        "highlight! link htmlLink String",
-        "highlight! link mkdLink String",
-        "highlight! link mkdURL Identifier",
-        "",
-        "highlight SpellBad gui=undercurl guibg=NONE",
-        "highlight Error guibg=NONE",
-        "highlight! link Title Normal",
-        "highlight mkdHeading guibg=NONE gui=bold",
-    },
-}, { overwrite, "colors/luna.vim" })
+shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, { overwrite, "colors/luna.vim" }
+)
 	x0
   nvim --headless +Shipwright +qa
   rm ./shipwright_build.lua
+  {
+    echo "$HEADER"
+    echo "if has('termguicolors')"
+    echo "  set termguicolors"
+    echo "endif"
+    echo 'let g:colors_name="luna"'
+    echo "set background=dark"
+    echo "highlight! link htmlLink String"
+    echo "highlight! link mkdLink String"
+    echo "highlight! link mkdURL Identifier"
+    echo ""
+    echo "highlight SpellBad gui=undercurl guibg=NONE"
+    echo "highlight Error guibg=NONE"
+    echo "highlight! link Title Normal"
+    echo "highlight mkdHeading guibg=NONE gui=bold"
+    echo ""
+    cat "colors/$THEME.vim"
+  } >"colors/$THEME.vim.tmp" && mv "colors/$THEME.vim.tmp" "colors/$THEME.vim"
   echo "committing to vim branch via worktree..."
   WORKTREE=$(mktemp -d)
   if ! git rev-parse --verify vim >/dev/null 2>&1; then
