@@ -1,6 +1,8 @@
 " luna v0.2.1 by sailorfe
 " built 2026-03-04
 " https://codeberg.org/sailorfe/luna.nvim
+
+hi clear
 if has('termguicolors')
   set termguicolors
 endif
