@@ -1,6 +1,20 @@
 " luna v0.2.1 by sailorfe
 " built 2026-03-04
 "
+if has('termguicolors')
+  set termguicolors
+endif
+let g:colors_name="luna"
+set background=dark
+highlight! link htmlLink String
+highlight! link mkdLink String
+highlight! link mkdURL Identifier
+
+highlight SpellBad gui=undercurl guibg=NONE
+highlight Error guibg=NONE
+highlight! link Title Normal
+highlight mkdHeading guibg=NONE gui=bold
+
 highlight Normal guifg=#EAD9F2 guibg=#271B2D guisp=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#372640 guisp=NONE gui=NONE
 highlight Comment guifg=#B99FC6 guibg=NONE guisp=NONE gui=italic
@@ -169,16 +183,3 @@ highlight markdownH5 guifg=#F0D175 guibg=NONE guisp=NONE gui=bold
 highlight! link markdownH5Delimiter markdownH5
 highlight markdownH6 guifg=#B27DE8 guibg=NONE guisp=NONE gui=bold
 highlight! link markdownH6Delimiter markdownH6
-if has('termguicolors')
-  set termguicolors
-endif
-let g:colors_name="luna"
-set background=dark
-highlight! link htmlLink String
-highlight! link mkdLink String
-highlight! link mkdURL Identifier
-
-highlight SpellBad gui=undercurl guibg=NONE
-highlight Error guibg=NONE
-highlight! link Title Normal
-highlight mkdHeading guibg=NONE gui=bold
