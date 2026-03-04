@@ -13,7 +13,7 @@ set background=dark
 highlight! link htmlLink String
 highlight! link mkdLink String
 highlight! link mkdURL Identifier
-highlight SpellBad gui=undercurl guibg=NONE
+highlight SpellBad gui=underline guibg=NONE
 highlight Error guibg=NONE
 highlight! link Title Normal
 highlight mkdHeading guibg=NONE gui=bold
