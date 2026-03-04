@@ -68,7 +68,7 @@ Plug 'https://codeberg.org/sailorfe/luna.nvim', { 'as': 'luna', 'branch': 'main'
 or you can place `colors/luna.vim` anywhere in your runtimepath:
 
 ```sh
-curl -LO https://codeberg.org/sailorfe/luna.nvim/raw/branch/vim/colors/luna.vim
+curl -LO https://codeberg.org/sailorfe/luna.nvim/raw/branch/main/extras/vim/luna.vim
 ```
 
 then set colorscheme with `colorscheme luna` either in your `vimrc` or temporarily with a command:
@@ -88,6 +88,7 @@ there is an `extras/` directory with ports for
 - [foot](https://codeberg.org/dnkl/foot)
 - [termux](https://termux.dev)
 - `tty` for the console
+- [vim](https://www.vim.org)
 - [wezterm](https://wezterm.org)
 
 ## contributing
@@ -100,6 +101,8 @@ theme generation takes the following steps:
 - add the output path `$APP/luna.*` to the `outputs` dictionary in `generator.py`.
 - ensure `palette.json` is up to date: `nvim --headless -c "luafile hex.lua" -c "qa"`.
 - run `python3 generator.py`.
+
+make pull requests to [codeberg](https://codeberg.org/sailorfe/luna.nvim/pulls).
 
 ## acknowledgments
 
