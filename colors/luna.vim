@@ -1,3 +1,6 @@
+" luna v0.2.1 by sailorfe
+" built 2026-03-04
+"
 highlight Normal guifg=#EAD9F2 guibg=#271B2D guisp=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#372640 guisp=NONE gui=NONE
 highlight Comment guifg=#B99FC6 guibg=NONE guisp=NONE gui=italic
