@@ -10,14 +10,6 @@ endif
 let g:colors_name='luna'
 set background=dark
 
-highlight! link htmlLink String
-highlight! link mkdLink String
-highlight! link mkdURL Identifier
-highlight SpellBad gui=underline guibg=NONE
-highlight Error guibg=NONE
-highlight! link Title Normal
-highlight mkdHeading guibg=NONE gui=bold
-
 highlight Normal guifg=#EAD9F2 guibg=#271B2D guisp=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#372640 guisp=NONE gui=NONE
 highlight Comment guifg=#B99FC6 guibg=NONE guisp=NONE gui=italic
