@@ -1,6 +1,5 @@
-# Luna for Alacritty
-# Author: sailorfe
-# Upstream: https://codeberg.org/sailorfe/luna.nvim/src/branch/main/extras/alacritty/luna.toml
+# luna v0.2.1 by sailorfe
+# built 2026-03-04
 
 [colors.primary]
 background = "#271B2D"

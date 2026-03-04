@@ -2,7 +2,7 @@
 set -euo pipefail
 shopt -s extglob
 THEME=$(jq -r '.name' metadata.json)
-HEADER=$(jq -r '"\" \(.name) v\(.version) by \(.author)\n\" built \(.updated)\n\""' metadata.json)
+HEADER=$(jq -r '"\" \(.name) v\(.version) by \(.author)\n\" built \(.updated)\n\" \(.homepage)\n"' metadata.json)
 
 case "${1:-}" in
 # == vim build ==
@@ -40,16 +40,19 @@ shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, { over
   rm ./shipwright_build.lua
   {
     echo "$HEADER"
+    echo ""
+    echo "hi clear"
     echo "if has('termguicolors')"
     echo "  set termguicolors"
     echo "endif"
-    echo 'let g:colors_name="luna"'
+    echo ""
+    echo "let g:colors_name='$THEME'"
     echo "set background=dark"
+    echo ""
     echo "highlight! link htmlLink String"
     echo "highlight! link mkdLink String"
     echo "highlight! link mkdURL Identifier"
-    echo ""
-    echo "highlight SpellBad gui=undercurl guibg=NONE"
+    echo "highlight SpellBad gui=underline guibg=NONE"
     echo "highlight Error guibg=NONE"
     echo "highlight! link Title Normal"
     echo "highlight mkdHeading guibg=NONE gui=bold"

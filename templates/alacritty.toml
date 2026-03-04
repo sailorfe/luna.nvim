@@ -1,7 +1,3 @@
-# Luna for Alacritty
-# Author: sailorfe
-# Upstream: https://codeberg.org/sailorfe/luna.nvim/src/branch/main/extras/alacritty/luna.toml
-
 [colors.primary]
 background = "[[base]]"
 foreground = "[[text]]"
