@@ -4,7 +4,7 @@ background = "[[base]]"
 cursor_bg = "[[text]]"
 cursor_border = "[[text]]"
 cursor_fg = "[[base]]"
-selection_bg = "[[moon]]"
+selection_bg = "[[saturn]]"
 selection_fg = "[[base]]"
 split = "[[high]]"
 compose_cursor = "[[venus]]"
@@ -19,24 +19,24 @@ background = "[[base]]"
 
 [colors.tab_bar.active_tab]
 fg_color = "[[base]]"
-bg_color = "[[moon]]"
+bg_color = "[[saturn]]"
 
 [colors.tab_bar.inactive_tab]
 fg_color = "[[faint]]"
 bg_color = "[[overlay]]"
 
 [colors.tab_bar.inactive_tab_hover]
-fg_color = "[[usagi]]"
+fg_color = "[[hotaru]]"
 bg_color = "[[overlay]]"
 # intensity = "Bold"
 
 [colors.tab_bar.new_tab_hover]
-fg_color = "[[usagi]]"
+fg_color = "[[hotaru]]"
 bg_color = "[[base]]"
 intensity = "Bold"
 
 [colors.tab_bar.new_tab]
-fg_color = "[[moon]]"
+fg_color = "[[saturn]]"
 bg_color = "[[base]]"
 
 [metadata]
