@@ -6,12 +6,13 @@ hi clear
 if has('termguicolors')
   set termguicolors
 endif
-let g:colors_name="luna"
+
+let g:colors_name='luna'
 set background=dark
+
 highlight! link htmlLink String
 highlight! link mkdLink String
 highlight! link mkdURL Identifier
-
 highlight SpellBad gui=undercurl guibg=NONE
 highlight Error guibg=NONE
 highlight! link Title Normal
