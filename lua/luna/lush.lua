@@ -344,6 +344,10 @@ local theme = lush(function(injected_functions)
 
     TroubleIndent({ bg = bssm.surface, fg = bssm.faint }),
     TroublePos({ bg = bssm.surface, fg = bssm.faint }),
+
+    IblIndent({ fg = bssm.med }),
+    IblScope({ Function }),
+    IblWhitespace({ Whitespace }),
   }
 end)
 ---@disagnostic disable
