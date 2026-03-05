@@ -1,0 +1,65 @@
+# luna v0.2.1 by sailorfe
+# built 2026-03-04
+# https://codeberg.org/sailorfe/luna.nvim
+
+[colors]
+# regular colors
+background       = '#271B2D'
+black            = '#372640'
+blue             = '#7DB2E8'
+cyan             = '#E87DB3'
+foreground       = '#EAD9F2'
+green            = '#D1F075'
+magenta          = '#B27DE8'
+red              = '#F07575'
+white            = '#EAD9F2'
+yellow           = '#F0D175'
+
+# cursor
+cursor           = '#EAD9F2'
+vi-cursor        = '#E87DB3'
+
+# navigation
+tabs             = '#271B2D'
+tabs-foreground  = '#EAD9F2'
+tabs-active      = '#B27DE8'
+tabs-active-highlight  = '#B27DE8'
+tabs-active-foreground = '#271B2D'
+bar              = '#271B2D'
+split            = '#483253'
+
+# search
+search-match-background = '#7DB2E8'
+search-match-foreground = '#271B2D'
+search-focused-match-background = '#F0D175'
+search-focused-match-foreground = '#271B2D'
+
+# hints
+hint-foreground  = '#271B2D'
+hint-background  = '#FAE39E'
+
+# selection
+selection-foreground   = '#271B2D'
+selection-background   = '#B27DE8'
+
+# dim colors
+dim-black        = '#372640'
+dim-blue         = '#A3CCF5'
+dim-cyan         = '#F5A3CC'
+dim-foreground   = '#EAD9F2'
+dim-green        = '#E3FA9E'
+dim-magenta      = '#CCA3F5'
+dim-red          = '#FA9E9E'
+dim-white        = '#B99FC6'
+dim-yellow       = '#FAE39E'
+
+# light colors
+light-black        = '#483253'
+light-blue         = '#A3CCF5'
+light-cyan         = '#F5A3CC'
+light-foreground   = '#EAD9F2'
+light-green        = '#E3FA9E'
+light-magenta      = '#CCA3F5'
+light-red          = '#FA9E9E'
+light-white        = '#F8EBFF'
+light-yellow       = '#FAE39E'

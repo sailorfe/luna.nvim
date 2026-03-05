@@ -54,6 +54,7 @@ this repository is mirrored to [github](https://github.com/sailorfe/luna.nvim) f
 - **current ports** under `extras/`:
   - [alacritty](https://alacritty.org)
   - [foot](https://codeberg.org/dnkl/foot)
+  - [rio](https://rioterm.com)
   - [termux](https://termux.dev)
   - `tty` for the console
   - [vim](https://www.vim.org)
