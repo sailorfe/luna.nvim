@@ -1,0 +1,16 @@
+# luna v0.2.1 by sailorfe
+# built 2026-03-04
+# https://codeberg.org/sailorfe/luna.nvim
+
+background-color=#271B2D
+text-color=#EAD9F2
+progress-color=over #523C5D
+
+[urgency=normal]
+border-color=#F0D175
+
+[urgency=low]
+border-color=#7DB2E8
+
+[urgency=critical]
+border-color=#F07575
