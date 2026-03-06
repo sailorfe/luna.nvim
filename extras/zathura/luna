@@ -1,0 +1,37 @@
+# luna v0.2.1 by sailorfe
+# built 2026-03-04
+# https://codeberg.org/sailorfe/luna.nvim
+
+set default-bg                  "#271B2D"
+set default-fg                  "#EAD9F2"
+
+set statusbar-fg                "#EAD9F2"
+set statusbar-bg                "#372640"
+
+set inputbar-bg                 "#483253"
+set inputbar-fg                 "#CCA3F5"
+
+set notification-bg             "#EAD9F2"
+set notification-fg             "#372640"
+
+set notification-error-bg       "#B27DE8"
+set notification-error-fg       "#372640"
+
+set notification-warning-bg     "#CCA3F5"
+set notification-warning-fg     "#372640"
+
+set highlight-color             "rgba(245, 163, 204, 0.3)"
+set highlight-active-color      "rgba(232, 125, 179, 0.3)"
+set highlight-fg                "#271B2D"
+
+set completion-bg               "#483253"
+set completion-fg               "#CCA3F5"
+
+set completion-highlight-fg     "#372640"
+set completion-highlight-bg     "#CCA3F5"
+
+set recolor-lightcolor          "#271B2D"
+set recolor-darkcolor           "#EAD9F2"
+
+set recolor                     "false"
+set recolor-keephue             "false"
