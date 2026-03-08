@@ -13,6 +13,8 @@ vim)
   fi
   echo "building $THEME vimscript..."
   cat <<-'x0' >./shipwright_build.lua
+vim.cmd('packadd lush.nvim')
+vim.cmd('packadd shipwright.nvim')
 local shipwright = require("shipwright")
 local lushwright = require("shipwright.transform.lush")
 local overwrite = require("shipwright.transform.overwrite")
@@ -36,7 +38,7 @@ end
 shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, { overwrite, "colors/luna.vim" }
 )
 	x0
-  nvim --headless +Shipwright +qa
+  nvim --headless -u scripts/init.lua +Shipwright +qa
   rm ./shipwright_build.lua
   {
     echo "$HEADER"
@@ -89,7 +91,7 @@ lua)
 	local colorscheme = require("luna.lush")
 	shipwright.run(colorscheme, lushwright.to_lua, {overwrite, "lua/luna/theme.lua.tmp"})
 	x0
-  nvim --headless +Shipwright +qa
+  nvim --headless -u scripts/init.lua +Shipwright +qa
   cat <<-x0 >"./lua/$THEME/theme.lua"
 	L = {}
 	---@return table
