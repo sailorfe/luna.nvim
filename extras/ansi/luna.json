@@ -1,7 +1,7 @@
 {
     "background": "#271B2D",
     "foreground": "#EAD9F2",
-    "black": "#372640",
+    "black": "#483253",
     "red": "#F07575",
     "green": "#D1F075",
     "yellow": "#F0D175",
@@ -9,7 +9,7 @@
     "magenta": "#B27DE8",
     "cyan": "#E87DB3",
     "white": "#EAD9F2",
-    "brightBlack": "#483253",
+    "brightBlack": "#7A5C8A",
     "brightRed": "#FA9E9E",
     "brightGreen": "#E3FA9E",
     "brightYellow": "#FAE39E",

@@ -5,7 +5,7 @@
 [colors]
 # regular colors
 background       = '#271B2D'
-black            = '#372640'
+black            = '#483253'
 blue             = '#7DB2E8'
 cyan             = '#E87DB3'
 foreground       = '#EAD9F2'
@@ -43,7 +43,7 @@ selection-foreground   = '#271B2D'
 selection-background   = '#B27DE8'
 
 # dim colors
-dim-black        = '#372640'
+dim-black        = '#523C5D'
 dim-blue         = '#A3CCF5'
 dim-cyan         = '#F5A3CC'
 dim-foreground   = '#EAD9F2'
@@ -54,7 +54,7 @@ dim-white        = '#B99FC6'
 dim-yellow       = '#FAE39E'
 
 # light colors
-light-black        = '#483253'
+light-black        = '#7A5C8A'
 light-blue         = '#A3CCF5'
 light-cyan         = '#F5A3CC'
 light-foreground   = '#EAD9F2'
