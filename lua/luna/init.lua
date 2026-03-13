@@ -1,18 +1,32 @@
--- init.lua
 local BSSM = {}
 BSSM.name = "luna"
-function BSSM.inthenameofthemoon()
-  vim.cmd("hi clear")
+--- @class LunaConfig colorscheme options
+local defaults = {
+  transparent = false,
+  overrides = false,
+}
+BSSM.opts = defaults
+--- @param opts LunaConfig colorscheme opts
+function BSSM.setup(opts)
+  BSSM.opts = vim.tbl_deep_extend("force", {}, BSSM.opts, opts or {})
+end
+
+--- @param opts LunaConfig colorscheme opts
+function BSSM.inthenameofthemoon(opts)
+  if opts and next(opts) then
+    BSSM.setup(opts)
+  end
+  if vim.g.syntax_on then vim.cmd("syntax reset") end
+  if vim.g.colors_name then vim.cmd("hi clear") end
   vim.o.termguicolors = true
   vim.g.colors_name = BSSM.name
   vim.o.background = "dark"
 
-  local theme = require("luna.theme")
-  local highlights = theme.build()
+  local theme_load = require("luna.theme")
+  local highlights = theme_load.build()
   for group, attrs in pairs(highlights) do
     vim.api.nvim_set_hl(0, group, attrs)
   end
-
   local palette = require("luna.miau").get()
   vim.g.terminal_color_0 = tostring(palette.base.hex)
   vim.g.terminal_color_8 = tostring(palette.overlay.hex)

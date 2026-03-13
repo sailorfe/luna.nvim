@@ -274,6 +274,15 @@ GitSignsAdd = {link = "@diff.plus"},
 ["@variable.builtin"] = {fg = "#B27DE8", bold = true, italic = true},
 ["@variable.member"] = {fg = "#EAD9F2"},
   }
-  return theme
+    local opts = require("perona").opts
+    if opts.transparent then
+      theme["Normal"].bg = "NONE"
+      theme["SignColumn"].bg = "NONE"
+      theme["StatusLine"].bg = "NONE"
+    end
+    if opts.overrides then
+      theme = vim.tbl_deep_extend("force", theme, opts.overrides)
+    end
+    return theme
 end
 return L
