@@ -101,7 +101,7 @@ lua)
   cat "./lua/$THEME/theme.lua.tmp" >>"./lua/$THEME/theme.lua"
   cat <<-x0 >>"./lua/$THEME/theme.lua"
 	  }
-    local opts = require("perona").opts
+    local opts = require("luna").opts
     if opts.transparent then
       theme["Normal"].bg = "NONE"
       theme["SignColumn"].bg = "NONE"

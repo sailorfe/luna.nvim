@@ -274,7 +274,7 @@ GitSignsAdd = {link = "@diff.plus"},
 ["@variable.builtin"] = {fg = "#B27DE8", bold = true, italic = true},
 ["@variable.member"] = {fg = "#EAD9F2"},
   }
-    local opts = require("perona").opts
+    local opts = require("luna").opts
     if opts.transparent then
       theme["Normal"].bg = "NONE"
       theme["SignColumn"].bg = "NONE"
