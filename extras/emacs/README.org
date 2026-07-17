@@ -1,0 +1,13 @@
+* luna-theme.el
+
+with ~straight.el~:
+
+#+BEGIN_SRC lisp
+  (use-package luna
+    :straight (luna
+               :type git
+               :repo "https://codeberg.org/sailorfe/luna.nvim"
+               :files ("extras/emacs/*.el")) ; <- CRUCIAL!
+    :config
+    (add-to-list 'custom-theme-load-path (straight--build-dir "luna")))
+#+END_SRC
