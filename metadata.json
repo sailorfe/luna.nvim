@@ -1,8 +1,8 @@
 {
   "name": "luna",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "sailorfe",
-  "updated": "2026-03-18",
+  "updated": "2026-07-17",
   "homepage": "https://codeberg.org/sailorfe/luna.nvim",
   "license": "MIT"
 }
