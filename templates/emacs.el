@@ -46,7 +46,7 @@
    ;; --- core ui -------------------------------------------------
    `(default ((t (:background ,base :foreground ,text))))
    `(cursor ((t (:background ,text))))
-   `(region ((t (:background ,moon :foreground ,base))))
+   `(region ((t (:background ,high))))
    `(secondary-selection ((t (:background ,med :foreground ,venus))))
    `(highlight ((t (:background ,overlay :foreground ,moon))))
    `(hl-line ((t (:background ,overlay))))
@@ -281,8 +281,8 @@
    `(org-code ((t (:foreground ,jupiter))))
    `(org-verbatim ((t (:foreground ,saturn))))
    `(org-link ((t (:foreground ,mercury :underline t))))
-   `(org-todo ((t (:background ,mars :foreground ,light :weight bold))))
-   `(org-done ((t (:background ,jupiter :foreground ,light :weight bold))))
+   `(org-todo ((t (:background ,mars :foreground ,base :weight bold))))
+   `(org-done ((t (:background ,jupiter :foreground ,base :weight bold))))
    `(org-headline-todo ((t (:foreground ,mars))))
    `(org-headline-done ((t (:foreground ,jupiter))))
    `(org-date ((t (:foreground ,muted :underline t))))
@@ -292,10 +292,10 @@
    `(org-macro ((t (:foreground ,venus))))
    `(org-table ((t (:foreground ,mercury))))
    ;; custom todo keywords
-   `(sailorfe-org-todo-next ((t (:background ,moon :foreground ,light :weight bold))))
-   `(sailorfe-org-todo-prog ((t (:background ,saturn :foreground ,light :weight bold))))
-   `(sailorfe-org-todo-wait ((t (:background ,mercury :foreground ,light :weight bold))))
-   `(sailorfe-org-todo-void ((t (:background ,high :foreground ,light :weight bold :strikethrough t))))
+   `(sailorfe-org-todo-next ((t (:background ,moon :foreground ,base :weight bold))))
+   `(sailorfe-org-todo-prog ((t (:background ,saturn :foreground ,base :weight bold))))
+   `(sailorfe-org-todo-wait ((t (:background ,mercury :foreground ,base :weight bold))))
+   `(sailorfe-org-todo-void ((t (:background ,high :foreground ,base :weight bold :strikethrough t))))
 
    ;; --- org-agenda -----------------------------------------------------
    `(org-agenda-structure ((t (:foreground ,moon :weight bold))))
