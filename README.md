@@ -63,7 +63,7 @@ a neovim colorscheme descended from [fairyfloss](https://github.com/sailorhg/fai
 - [termux](https://termux.dev)
 - tty
 - shell exports
-- [vim](https://www.vim.org)
+- vim 8+ ([vim classic](https://vim-classic.org))
 - [wezterm](https://wezterm.org)
 - [zathura](https://github.com/pwmt/zathura)
 
