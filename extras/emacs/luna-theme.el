@@ -12,27 +12,27 @@
 (deftheme luna
   "Syntax highlights from Planet Mau.")
 
-(let (; backgrounds
+(let (;; backgrounds
       (base "#271B2D")
       (surface "#372640")
       (overlay "#483253")
-                                        ; foregrounds
+      ;; foregrounds
       (text "#EAD9F2")
       (light "#F8EBFF")
       (faint "#B99FC6")
       (muted "#6B5775")
-                                        ; main
+      ;; main
       (mars "#F07575")
       (jupiter "#D1F075")
       (venus "#F0D175")
       (mercury "#7DB2E8")
       (saturn "#B27DE8")
       (moon "#E87DB3")
-                                        ; contrast highlights
+      ;; contrast highlights
       (low "#291D2F")
       (med "#523C5D")
       (high "#7A5C8A")
-                                        ; just for terminal brights
+      ;; just for terminal brights
       (rei "#FA9E9E")
       (makoto "#E3FA9E")
       (minako "#FAE39E")
@@ -109,8 +109,7 @@
    `(show-paren-match-expression ((t (:background ,overlay))))
    `(show-paren-mismatch ((t (:background ,mars :foreground ,light :weight bold))))
 
-   ;; --- misc syntax ----------------------------------------------
-   ;; sh
+   ;; --- sh -----------------------------------------------------------
    `(sh-heredoc ((t (:foreground ,venus :weight bold))))
    `(sh-quoted-exec ((t :foreground ,mars :slant italic)))
    `(sh-escaped-newline ((t :foreground ,faint)))
@@ -161,7 +160,7 @@
    `(font-lock-bracket-face ((t (:foreground ,text))))
    `(font-lock-punctuation-face ((t (:foreground ,text))))
    `(font-lock-delimiter-face ((t (:foreground ,muted))))
-   
+
    ;; --- diff-mode ------------------------------------------------
    `(diff-header ((t (:background ,surface))))
    `(diff-file-header ((t (:background ,surface :foreground ,text :weight bold))))
@@ -176,11 +175,6 @@
    `(diff-indicator-added ((t (:foreground ,jupiter))))
    `(diff-indicator-removed ((t (:foreground ,mars))))
    `(diff-indicator-changed ((t (:foreground ,moon))))
-
-   ;; --- diff-hl ----------------------------------------------------
-   `(diff-hl-insert ((t (:foreground ,jupiter))))
-   `(diff-hl-delete ((t (:foreground ,mars))))
-   `(diff-hl-change ((t (:foreground ,moon))))
 
    ;; --- flyspell ---------------------------------------------------
    `(flyspell-incorrect ((t (:foreground ,mars :underline (:style wave)))))
@@ -221,32 +215,6 @@
    `(dired-set-id ((t (:foreground ,saturn :weight bold))))
    `(dired-special ((t (:foreground ,jupiter))))
 
-   ;; --- diredfl --------------------------------------------------------
-   `(diredfl-dir-heading ((t (:foreground ,moon :weight bold))))
-   `(diredfl-dir-name ((t (:foreground ,mercury))))
-   `(diredfl-dir-priv ((t (:foreground ,mercury))))
-   `(diredfl-file-name ((t (:foreground ,text))))
-   `(diredfl-file-suffix ((t (:foreground ,faint))))
-   `(diredfl-symlink ((t (:foreground ,saturn))))
-   `(diredfl-number ((t (:foreground ,venus))))
-   `(diredfl-date-time ((t (:foreground ,faint))))
-   `(diredfl-deletion ((t (:foreground ,mars :weight bold))))
-   `(diredfl-deletion-file-name ((t (:foreground ,mars :strike-through t))))
-   `(diredfl-flag-mark ((t (:foreground ,moon :weight bold :background ,overlay))))
-   `(diredfl-flag-mark-line ((t (:background ,overlay))))
-   `(diredfl-ignored-file-name ((t (:foreground ,muted))))
-   `(diredfl-compressed-file-suffix ((t (:foreground ,saturn))))
-   `(diredfl-compressed-file-name ((t (:foreground ,text))))
-   `(diredfl-executable-flag ((t (:foreground ,jupiter :weight bold))))
-   `(diredfl-read-priv ((t (:foreground ,venus))))
-   `(diredfl-write-priv ((t (:foreground ,venus))))
-   `(diredfl-exec-priv ((t (:foreground ,jupiter))))
-   `(diredfl-no-priv ((t (:foreground ,muted))))
-   `(diredfl-rare-priv ((t (:foreground ,saturn :weight bold))))
-   `(diredfl-link-priv ((t (:foreground ,saturn))))
-   `(diredfl-autofile-name ((t (:foreground ,faint :slant italic))))
-   `(diredfl-tagged-autofile-name ((t (:foreground ,moon :slant italic))))
-
    ;; --- flymake --------------------------------------------------------
    `(flymake-error ((t (:underline (:style wave :color ,mars)))))
    `(flymake-warning ((t (:underline (:style wave :color ,venus)))))
@@ -255,45 +223,8 @@
    `(flymake-warning-echo ((t (:foreground ,venus))))
    `(flymake-note-echo ((t (:foreground ,mercury))))
 
-   ;; --- flycheck -------------------------------------------------------
-   `(flycheck-error ((t (:underline (:style wave :color ,mars)))))
-   `(flycheck-warning ((t (:underline (:style wave :color ,venus)))))
-   `(flycheck-info ((t (:underline (:style wave :color ,mercury)))))
-   `(flycheck-fringe-error ((t (:foreground ,mars :weight bold))))
-   `(flycheck-fringe-warning ((t (:foreground ,venus :weight bold))))
-   `(flycheck-fringe-info ((t (:foreground ,mercury :weight bold))))
-   `(flycheck-error-list-error ((t (:foreground ,mars :weight bold))))
-   `(flycheck-error-list-warning ((t (:foreground ,venus :weight bold))))
-   `(flycheck-error-list-info ((t (:foreground ,mercury))))
-
-   ;; --- jinkx monsoon ---------------------------------------------------
-   `(jinx-misspelled ((t (:foreground ,mars :underline (:style wave :color ,mars)))))
-   `(jinx-highlight ((t (:foreground ,base :background ,venus))))
-
-   ;; --- eldoc / help hints & tooltips -----------------------------------
+   ;; --- eldoc -----------------------------------------------------------
    `(eldoc-highlight-function-argument ((t (:foreground ,moon :weight bold))))
-   `(eldoc-box-body ((t (:background ,surface :foreground ,text))))
-   `(eldoc-box-border ((t (:background ,muted))))
-
-   ;; --- markdown-mode -------------------------------------------------
-   `(markdown-header-face ((t (:foreground ,moon :weight bold))))
-   `(markdown-header-face-1 ((t (:foreground ,moon :weight bold))))
-   `(markdown-header-face-2 ((t (:foreground ,venus :weight bold))))
-   `(markdown-header-face-3 ((t (:foreground ,jupiter :weight bold))))
-   `(markdown-header-face-4 ((t (:foreground ,saturn :weight bold))))
-   `(markdown-header-face-5 ((t (:foreground ,mercury :weight bold))))
-   `(markdown-header-face-6 ((t (:foreground ,mars :weight bold))))
-   `(markdown-header-delimiter-face ((t (:foreground ,muted))))
-   `(markdown-link-face ((t (:foreground ,mercury :underline t))))
-   `(markdown-url-face ((t (:foreground ,mercury :slant italic :underline t))))
-   `(markdown-code-face ((t (:foreground ,jupiter))))
-   `(markdown-inline-code-face ((t (:foreground ,jupiter))))
-   `(markdown-blockquote-face ((t (:foreground ,faint :slant italic))))
-   `(markdown-list-face ((t (:foreground ,venus))))
-   `(markdown-bold-face ((t (:weight bold))))
-   `(markdown-italic-face ((t (:slant italic))))
-   `(markdown-strike-through-face ((t (:strike-through t :foreground ,muted))))
-   `(markdown-markup-face ((t (:foreground ,muted))))
 
    ;; --- org-mode basics ------------------------------------------------
    `(org-level-1 ((t (:foreground ,moon :weight bold))))
@@ -317,6 +248,7 @@
    `(org-date ((t (:foreground ,muted :underline t))))
    `(org-tag ((t (:foreground ,faint))))
    `(org-special-keyword ((t (:foreground ,muted))))
+   `(org-drawer ((t (:foreground ,saturn))))
    `(org-quote ((t (:foreground ,faint :slant italic))))
    `(org-macro ((t (:foreground ,venus))))
    `(org-table ((t (:foreground ,mercury))))
@@ -350,7 +282,101 @@
    `(org-column ((t (:background ,surface))))
    `(org-column-title ((t (:background ,surface :foreground ,moon :weight bold))))
 
-   ;; --- magit ------------------------------------------------------------
+   ;; --- eww -------------------------------------------------------------
+   `(eww-form-file ((t (:foreground ,base :background ,faint :box nil))))
+   `(eww-form-submit ((t (:foreground ,base :background ,faint :box nil))))
+   `(eww-form-text ((t (:foreground ,base :background ,text :box nil))))
+   `(eww-form-select ((t (:foreground ,base :background ,saturn :box nil))))
+   `(eww-form-checkbox ((t (:foreground ,base :background ,saturn :box nil))))
+   `(eww-form-textarea ((t (:foreground ,base :background ,text :box nil))))
+   `(eww-invalid-certificate ((t :foreground ,mars :weight bold)))
+   `(eww-valid-certificate ((t :foreground ,jupiter :weight bold)))
+
+   ;; --- smerge --------------------------------------------------------
+   ;; currently dogfooding
+   `(smerge-mine ((t (:background ,surface :foreground ,mars :extend t))))
+   `(smerge-other ((t (:background ,surface :foreground ,jupiter :extend t))))
+   `(smerge-base ((t (:background ,surface :foreground ,merucry :extend t))))
+   `(smerge-markers ((t (:background ,overlay :foreground ,light) :weight bold :extend t)))
+   `(smerge-refined-added ((t (:background ,low :foreground ,jupiter))))
+   `(smerge-refined-removed ((t (:background ,low :foreground ,mars))))
+   `(smerge-refined-changed ((t (:background ,low :foreground ,mercury))))
+
+   ;; ===================================================================
+   ;; external packages
+   ;; ===================================================================
+
+   ;; --- diff-hl ----------------------------------------------------
+   `(diff-hl-insert ((t (:foreground ,jupiter))))
+   `(diff-hl-delete ((t (:foreground ,mars))))
+   `(diff-hl-change ((t (:foreground ,moon))))
+
+   ;; --- diredfl --------------------------------------------------------
+   `(diredfl-dir-heading ((t (:foreground ,moon :weight bold))))
+   `(diredfl-dir-name ((t (:foreground ,mercury))))
+   `(diredfl-dir-priv ((t (:foreground ,mercury))))
+   `(diredfl-file-name ((t (:foreground ,text))))
+   `(diredfl-file-suffix ((t (:foreground ,faint))))
+   `(diredfl-symlink ((t (:foreground ,saturn))))
+   `(diredfl-number ((t (:foreground ,venus))))
+   `(diredfl-date-time ((t (:foreground ,faint))))
+   `(diredfl-deletion ((t (:foreground ,mars :weight bold))))
+   `(diredfl-deletion-file-name ((t (:foreground ,mars :strike-through t))))
+   `(diredfl-flag-mark ((t (:foreground ,moon :weight bold :background ,overlay))))
+   `(diredfl-flag-mark-line ((t (:background ,overlay))))
+   `(diredfl-ignored-file-name ((t (:foreground ,muted))))
+   `(diredfl-compressed-file-suffix ((t (:foreground ,saturn))))
+   `(diredfl-compressed-file-name ((t (:foreground ,text))))
+   `(diredfl-executable-flag ((t (:foreground ,jupiter :weight bold))))
+   `(diredfl-read-priv ((t (:foreground ,venus))))
+   `(diredfl-write-priv ((t (:foreground ,venus))))
+   `(diredfl-exec-priv ((t (:foreground ,jupiter))))
+   `(diredfl-no-priv ((t (:foreground ,muted))))
+   `(diredfl-rare-priv ((t (:foreground ,saturn :weight bold))))
+   `(diredfl-link-priv ((t (:foreground ,saturn))))
+   `(diredfl-autofile-name ((t (:foreground ,faint :slant italic))))
+
+   ;; --- eldoc-box -------------------------------------------------------
+   `(eldoc-box-body ((t (:background ,surface :foreground ,text))))
+   `(eldoc-box-border ((t (:background ,muted))))
+   `(diredfl-tagged-autofile-name ((t (:foreground ,moon :slant italic))))
+
+   ;; --- flycheck -------------------------------------------------------
+   `(flycheck-error ((t (:underline (:style wave :color ,mars)))))
+   `(flycheck-warning ((t (:underline (:style wave :color ,venus)))))
+   `(flycheck-info ((t (:underline (:style wave :color ,mercury)))))
+   `(flycheck-fringe-error ((t (:foreground ,mars :weight bold))))
+   `(flycheck-fringe-warning ((t (:foreground ,venus :weight bold))))
+   `(flycheck-fringe-info ((t (:foreground ,mercury :weight bold))))
+   `(flycheck-error-list-error ((t (:foreground ,mars :weight bold))))
+   `(flycheck-error-list-warning ((t (:foreground ,venus :weight bold))))
+   `(flycheck-error-list-info ((t (:foreground ,mercury))))
+
+   ;; --- jinkx monsoon ---------------------------------------------------
+   `(jinx-misspelled ((t (:foreground ,mars :underline (:style wave :color ,mars)))))
+   `(jinx-highlight ((t (:foreground ,base :background ,venus))))
+
+   ;; --- markdown-mode -------------------------------------------------
+   `(markdown-header-face ((t (:foreground ,moon :weight bold))))
+   `(markdown-header-face-1 ((t (:foreground ,moon :weight bold))))
+   `(markdown-header-face-2 ((t (:foreground ,venus :weight bold))))
+   `(markdown-header-face-3 ((t (:foreground ,jupiter :weight bold))))
+   `(markdown-header-face-4 ((t (:foreground ,saturn :weight bold))))
+   `(markdown-header-face-5 ((t (:foreground ,mercury :weight bold))))
+   `(markdown-header-face-6 ((t (:foreground ,mars :weight bold))))
+   `(markdown-header-delimiter-face ((t (:foreground ,muted))))
+   `(markdown-link-face ((t (:foreground ,mercury :underline t))))
+   `(markdown-url-face ((t (:foreground ,mercury :slant italic :underline t))))
+   `(markdown-code-face ((t (:foreground ,jupiter))))
+   `(markdown-inline-code-face ((t (:foreground ,jupiter))))
+   `(markdown-blockquote-face ((t (:foreground ,faint :slant italic))))
+   `(markdown-list-face ((t (:foreground ,venus))))
+   `(markdown-bold-face ((t (:weight bold))))
+   `(markdown-italic-face ((t (:slant italic))))
+   `(markdown-strike-through-face ((t (:strike-through t :foreground ,muted))))
+   `(markdown-markup-face ((t (:foreground ,muted))))
+
+   ;; --- magit / transient ---------------------------------------------
 
    ;; sections / headers
    `(magit-section-heading ((t (:foreground ,moon :weight bold))))
@@ -429,7 +455,7 @@
    `(magit-blame-date ((t (:foreground ,muted))))
    `(magit-blame-name ((t (:foreground ,moon))))
 
-   ;; --- in-buffer completion popups (corfu) ----------------------------
+   ;; --- corfu ----------------------------------------------------------
    `(corfu-default ((t (:background ,surface :foreground ,text))))
    `(corfu-current ((t (:background ,overlay :foreground ,moon :weight bold))))
    `(corfu-bar ((t (:background ,high))))
@@ -437,41 +463,17 @@
    `(corfu-annotations ((t (:foreground ,muted :slant italic))))
    `(corfu-deprecated ((t (:foreground ,muted :strike-through t))))
 
-   ;; --- in-buffer completion popups (company) --------------------------
-   `(company-tooltip ((t (:background ,surface :foreground ,text))))
-   `(company-tooltip-selection ((t (:background ,overlay :foreground ,moon :weight bold))))
-   `(company-tooltip-common ((t (:foreground ,moon :weight bold))))
-   `(company-tooltip-common-selection ((t (:foreground ,moon :weight bold :underline t))))
-   `(company-tooltip-annotation ((t (:foreground ,muted :slant italic))))
-   `(company-tooltip-annotation-selection ((t (:foreground ,faint :slant italic))))
-   `(company-tooltip-mouse ((t (:background ,overlay))))
-   `(company-tooltip-search ((t (:background ,med :foreground ,venus))))
-   `(company-tooltip-search-selection ((t (:background ,med :foreground ,venus))))
-   `(company-scrollbar-bg ((t (:background ,surface))))
-   `(company-scrollbar-fg ((t (:background ,high))))
-   `(company-preview ((t (:foreground ,muted))))
-   `(company-preview-common ((t (:foreground ,moon :weight bold))))
-   `(company-preview-search ((t (:background ,med :foreground ,venus))))
-
-   ;; --- minibuffer completion UI ---------------------------------------
+   ;; --- vertico --------------------------------------------------------
    `(vertico-current ((t (:background ,overlay :foreground ,moon :weight bold))))
    `(vertico-group-title ((t (:foreground ,faint :weight bold))))
    `(vertico-group-separator ((t (:foreground ,muted :strike-through t))))
    `(vertico-multiline ((t (:foreground ,muted))))
+
+   ;; --- orderless -------------------------------------------------------
    `(orderless-match-face-0 ((t (:foreground ,moon :weight bold))))
    `(orderless-match-face-1 ((t (:foreground ,mercury :weight bold))))
    `(orderless-match-face-2 ((t (:foreground ,jupiter :weight bold))))
    `(orderless-match-face-3 ((t (:foreground ,saturn :weight bold))))
-
-   ;; --- eww -------------------------------------------------------------
-   `(eww-form-file ((t (:foreground ,base :background ,faint :box nil))))
-   `(eww-form-submit ((t (:foreground ,base :background ,faint :box nil))))
-   `(eww-form-text ((t (:foreground ,base :background ,text :box nil))))
-   `(eww-form-select ((t (:foreground ,base :background ,saturn :box nil))))
-   `(eww-form-checkbox ((t (:foreground ,base :background ,saturn :box nil))))
-   `(eww-form-textarea ((t (:foreground ,base :background ,text :box nil))))
-   `(eww-invalid-certificate ((t :foreground ,mars :weight bold)))
-   `(eww-valid-certificate ((t :foreground ,jupiter :weight bold)))
 
    ;; --- dashboard -------------------------------------------------------
    `(dashboard-heading ((t (:foreground ,mercury :weight bold))))
@@ -481,7 +483,7 @@
    `(dashboard-footer-face ((t (:foreground ,faint :slant italic))))
    `(dashboard-text-banner ((t (:foreground ,mercury))))
    `(dashboard-banner-logo-title ((t (:foreground ,text))))
-   
+
    ;; --- vterm -----------------------------------------------------------
    `(vterm-color-black ((t (:foreground ,low :background ,low))))
    `(vterm-color-bright-black ((t (:foreground ,med :background ,med))))
