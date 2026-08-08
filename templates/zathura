@@ -20,6 +20,9 @@ set highlight-color             "rgba([[usagi-rgb]], 0.5)"
 set highlight-active-color      "rgba([[moon-rgb]], 0.5)"
 set highlight-fg                "[[base]]"
 
+set completion-group-bg         "[[surface]]"
+set completion-group-fg         "[[text]]"
+
 set completion-bg               "[[overlay]]"
 set completion-fg               "[[hotaru]]"
 

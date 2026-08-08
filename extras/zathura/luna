@@ -24,6 +24,9 @@ set highlight-color             "rgba(245, 163, 204, 0.5)"
 set highlight-active-color      "rgba(232, 125, 179, 0.5)"
 set highlight-fg                "#271B2D"
 
+set completion-group-bg         "#372640"
+set completion-group-fg         "#EAD9F2"
+
 set completion-bg               "#483253"
 set completion-fg               "#CCA3F5"
 
